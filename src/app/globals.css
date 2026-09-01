@@ -3,18 +3,51 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-jakarta);
+  --font-serif: var(--font-fraunces);
 
-  --color-lavender-blush-50: #feedf3;
-  --color-lavender-blush-100: #fee5ee;
-  --color-lavender-blush-200: #ffcade;
-  --color-lavender-blush-300: #ff9fc1;
-  --color-lavender-blush-400: #ff6497;
-  --color-lavender-blush-500: #fe3672;
-  --color-lavender-blush-600: #ef134a;
-  --color-lavender-blush-700: #d00633;
-  --color-lavender-blush-800: #ac082b;
-  --color-lavender-blush-900: #8f0c27;
-  --color-lavender-blush-950: #580012;
+  /* Core palette */
+  --color-petal-white: #fff7f6;
+  --color-plum-ink: #2c1220;
+  --color-warm-slate: #6b5a5f;
+
+  /* Brand pink (kept from your uicolors scale) */
+  --color-rose-50: #feedf3;
+  --color-rose-100: #ffe5ee;
+  --color-rose-200: #ffcade;
+  --color-rose-300: #ff9fc1;
+  --color-rose-400: #ff6497;
+  --color-rose-500: #fe3672;
+  --color-rose-600: #ef134a;
+  --color-rose-700: #d00633;
+  --color-rose-800: #ac082b;
+  --color-rose-900: #8f0c27;
+  --color-rose-950: #580012;
+
+  /* Secondary — sage, balances the pink */
+  --color-sage-50: #f1f4f2;
+  --color-sage-100: #dde5e0;
+  --color-sage-200: #bccac2;
+  --color-sage-300: #9bb0a2;
+  --color-sage-400: #7a9187;
+  --color-sage-500: #5f766a;
+  --color-sage-600: #4a5d53;
+  --color-sage-700: #38473f;
+
+  /* Radius / shadow tokens — soft, not the default SaaS card shadow */
+  --radius-card: 1.5rem;
+  --shadow-soft: 0 12px 40px -12px rgb(44 18 32 / 0.14);
 }
+
+:root {
+  --background: var(--color-petal-white);
+  --foreground: var(--color-plum-ink);
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-serif);
+}
+:is(p, span, button, li, div, a) {
+  font-family: var(--font-sans);
+}
+
