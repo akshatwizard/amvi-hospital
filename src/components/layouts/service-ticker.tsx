@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { AnimatePresence, motion, useReducedMotion } from "motion/react"
+import { cn } from "@/lib/utils"
 
 const services = [
     "IVF & Fertility Treatment",
@@ -13,7 +14,7 @@ const services = [
     "Cosmetic Gynecology",
 ]
 
-export default function ServiceTicker() {
+export default function ServiceTicker({ variant = "light" }: { variant?: "light" | "dark" }) {
     const [active, setActive] = useState(0)
     const reduced = useReducedMotion()
 
@@ -27,7 +28,7 @@ export default function ServiceTicker() {
 
     return (
         <span className='hidden lg:flex items-center gap-2 text-xs'>
-            <span className='text-warm-slate'>Specialised in</span>
+            <span className={variant === "dark" ? "text-rose-200" : "text-warm-slate"}>Specialised in</span>
             <span className='relative inline-block overflow-hidden'>
                 <AnimatePresence mode="wait">
                     <motion.span
@@ -36,7 +37,7 @@ export default function ServiceTicker() {
                         animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
                         exit={reduced ? undefined : { y: -14, opacity: 0, filter: "blur(6px)" }}
                         transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                        className="block whitespace-nowrap text-plum-ink"
+                        className={cn("block whitespace-nowrap", variant === "dark" ? "text-petal-white" : "text-plum-ink")}
                     >
                         {services[active]}
                     </motion.span>

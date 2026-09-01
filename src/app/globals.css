@@ -11,18 +11,17 @@
   --color-plum-ink: #2c1220;
   --color-warm-slate: #6b5a5f;
 
-  /* Brand pink (kept from your uicolors scale) */
-  --color-rose-50: #feedf3;
-  --color-rose-100: #ffe5ee;
-  --color-rose-200: #ffcade;
-  --color-rose-300: #ff9fc1;
-  --color-rose-400: #ff6497;
-  --color-rose-500: #fe3672;
-  --color-rose-600: #ef134a;
-  --color-rose-700: #d00633;
-  --color-rose-800: #ac082b;
-  --color-rose-900: #8f0c27;
-  --color-rose-950: #580012;
+  --color-rose-50: #fcf3f9;
+  --color-rose-100: #f7e3f0;
+  --color-rose-200: #eec4e0;
+  --color-rose-300: #e198c9;
+  --color-rose-400: #d161ac;
+  --color-rose-500: #be3791;
+  --color-rose-600: #9e2e79;
+  --color-rose-700: #8c296c;
+  --color-rose-800: #6f2055;
+  --color-rose-900: #571942;
+  --color-rose-950: #37102a;
 
   /* Secondary — sage, balances the pink */
   --color-sage-50: #f1f4f2;
@@ -50,4 +49,3 @@
 :is(p, span, button, li, div, a) {
   font-family: var(--font-sans);
 }
-
