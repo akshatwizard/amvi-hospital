@@ -25,7 +25,7 @@ export default function DesktopNav() {
     return (
         <Section className={cn(
             'hidden lg:block z-40 h-12 sticky top-0 bg-petal-white border-b border-rose-100 transition-colors duration-300 ease-in-out',
-            scrolled && "bg-rose-600"
+            scrolled && "bg-rose-600 border-none"
         )}>
             <Wrapper bare className='h-full'>
                 <nav className='w-full h-full flex items-center gap-0.5'>

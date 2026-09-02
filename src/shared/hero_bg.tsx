@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 import { motion, useScroll, useTransform, useReducedMotion } from "motion/react"
 
 type Props = {
-    children?: React.ReactNode
+    children: React.ReactNode
     className?: string
     variant?: "full" | "compact"
 }
@@ -32,9 +32,9 @@ export default function HeroBg({ children, className, variant = "full" }: Props)
         <Section
             ref={sectionRef}
             className={cn(
-                'relative bg-petal-white overflow-hidden',
+                'relative bg-[#f1dadd] overflow-hidden',
                 variant === "full"
-                    ? 'min-h-[86svh] [clip-path:ellipse(115%_92%_at_50%_0%)]'
+                    ? 'min-h-[86svh] md:[clip-path:ellipse(115%_92%_at_50%_0%)] [clip-path:ellipse(190%_100%_at_50%_0%)]'
                     : 'min-h-[40svh]',
                 className
             )}
