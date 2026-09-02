@@ -6,6 +6,7 @@ import AboutDoctor from "@/components/home/about_doctor";
 import Testimonials from "@/components/home/testimonials";
 import CareJourney from "@/components/home/care_journey";
 import Faq from "@/components/home/faq";
+import BeforeYouGo from "@/components/home/before_you_go";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Testimonials />
       <AboutHospital />
       <AboutDoctor />
+      <BeforeYouGo />
       <Faq />
     </main>
   );
