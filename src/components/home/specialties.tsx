@@ -1,7 +1,5 @@
-"use client"
-
 import Link from 'next/link'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Star } from 'lucide-react'
 import { Section, Wrapper } from '@/shared/sections'
 import { StaggerContainer, StaggerItem } from '@/shared/stagger'
 import RevealText from '@/shared/reveal_text'
@@ -9,6 +7,8 @@ import Reveal from '@/shared/reveal'
 import { specialties } from '@/constants/specialties'
 
 export default function Specialties() {
+    const initials = ["PS", "RK", "MN"]
+    const initialColors = ["bg-rose-200", "bg-rose-700", "bg-sage-500"]
     return (
         <Section>
             <Wrapper>
@@ -30,6 +30,36 @@ export default function Specialties() {
                                 From your first consultation to delivery day and beyond, our specialists cover
                                 every area of women's health under one roof across both our centers.
                             </p>
+                        </Reveal>
+
+                        <Reveal delay={0.4} className='mt-44 hidden bg-rose-600 backdrop-blur rounded-lg shadow-soft px-5 py-4 md:flex md:flex-col gap-3 w-74'>
+                            {/* Avatar stack + trust pill */}
+                            <div className='flex items-center gap-2'>
+                                <div className='flex -space-x-2 shrink-0'>
+                                    {initials.map((initial, i) => (
+                                        <span
+                                            key={initial}
+                                            className={`lg:size-8 size-6 rounded-full lg:ring-2 ring-1 ring-petal-white flex items-center justify-center lg:text-[10px] text-[8px] font-medium text-petal-white ${initialColors[i]}`}
+                                        >
+                                            {initial}
+                                        </span>
+                                    ))}
+                                </div>
+                                <span className='text-[11px] text-rose-700 bg-rose-50 rounded-full px-2.5 py-1'>+30k</span>
+                                <span className='ml-auto text-[11px] text-sage-600 bg-sage-50 rounded-full px-2.5 py-1'>Trusted</span>
+                            </div>
+
+                            <p className='text-xs text-petal-white leading-snug'>
+                                Compassionate care, trusted by families across Hyderabad.
+                            </p>
+
+                            <div className='flex items-end justify-between pt-1 border-t border-rose-400/40'>
+                                <div className='flex items-start gap-1 pt-2'>
+                                    <span className='font-serif lg:text-7xl text-5xl text-petal-white leading-none'>4.4</span>
+                                    <Star size={18} className='text-rose-200 mb-0.5' fill="currentColor" />
+                                </div>
+                                <span className='text-[10px] text-rose-100 uppercase tracking-wide pt-2'>Google Reviews</span>
+                            </div>
                         </Reveal>
                     </div>
 
