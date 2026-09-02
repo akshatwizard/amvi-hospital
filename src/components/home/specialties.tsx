@@ -56,7 +56,7 @@ export default function Specialties() {
                             <div className='flex items-end justify-between pt-1 border-t border-rose-400/40'>
                                 <div className='flex items-start gap-1 pt-2'>
                                     <span className='font-serif lg:text-7xl text-5xl text-petal-white leading-none'>4.4</span>
-                                    <Star size={18} className='text-rose-200 mb-0.5' fill="currentColor" />
+                                    <Star size={18} className='text-yellow-300 mb-0.5' fill="currentColor" />
                                 </div>
                                 <span className='text-[10px] text-rose-100 uppercase tracking-wide pt-2'>Google Reviews</span>
                             </div>
