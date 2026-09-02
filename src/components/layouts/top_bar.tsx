@@ -31,12 +31,12 @@ export default function TopBar() {
 
                     <ServiceTicker variant="dark" />
 
-                    <Link
+                    {/* <Link
                         href="/contact"
                         className='text-xs text-petal-white hover:text-rose-100 transition-colors underline underline-offset-4 decoration-rose-300 shrink-0'
                     >
                         Book appointment
-                    </Link>
+                    </Link> */}
                 </div>
             </Wrapper>
         </Section>

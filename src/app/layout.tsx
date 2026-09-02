@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layouts/header";
 import TopBar from "@/components/layouts/top_bar";
 import DesktopNav from "@/components/layouts/desktop_nav";
+import SmoothScrollProvider from "@/providers/smooth_scroll_provider";
 
 
 const fraunces = Fraunces({
@@ -29,12 +30,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${fraunces.variable} ${jakarta.variable} antialiased`}
     >
-      <body>
-        <TopBar />
-        <Header />
-        <DesktopNav />
-        {children}
-      </body>
+      <SmoothScrollProvider>
+        <body>
+          <TopBar />
+          <Header />
+          <DesktopNav />
+          {children}
+        </body>
+      </SmoothScrollProvider>
     </html>
   );
 }

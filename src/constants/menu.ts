@@ -1,7 +1,7 @@
 import { MenuItem } from "@/types/menu.types";
 
 export const navItems: MenuItem[] = [
-    { name: "Home", href: "/" },
+    // { name: "Home", href: "/" },
     {
         name: "About",
         href: "/about",
