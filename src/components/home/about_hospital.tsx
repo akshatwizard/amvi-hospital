@@ -10,7 +10,7 @@ import { facility_features, portfolio_areas } from '@/constants/about_hospital'
 
 export default function AboutHospital() {
     return (
-        <Section className='bg-petal-white'>
+        <Section>
             <Wrapper>
                 <div className='grid md:grid-cols-2 gap-12 md:gap-16'>
                     <div>

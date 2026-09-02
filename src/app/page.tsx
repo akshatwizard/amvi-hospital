@@ -5,6 +5,7 @@ import AboutHospital from "@/components/home/about_hospital";
 import AboutDoctor from "@/components/home/about_doctor";
 import Testimonials from "@/components/home/testimonials";
 import CareJourney from "@/components/home/care_journey";
+import Faq from "@/components/home/faq";
 
 export default function Home() {
   return (
@@ -13,9 +14,10 @@ export default function Home() {
       <Specialties />
       <CareJourney />
       <Highlights />
+      <Testimonials />
       <AboutHospital />
       <AboutDoctor />
-      <Testimonials />
+      <Faq />
     </main>
   );
 }
