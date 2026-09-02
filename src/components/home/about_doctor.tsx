@@ -19,7 +19,7 @@ export default function AboutDoctor() {
                         <Reveal y={40}>
                             <div className='relative w-full aspect-4/5 rounded-card overflow-hidden'>
                                 <Image
-                                    src="/images/doctors/dr-shaivalini.webp"
+                                    src="/images/doctor/dr-shaivalini.png"
                                     alt="Dr. Shaivalini Kamarapu, Senior Cosmetic Gynaecologist at AMVI Hospital"
                                     fill
                                     className='object-cover'
