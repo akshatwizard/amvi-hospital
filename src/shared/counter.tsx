@@ -13,7 +13,7 @@ export default function Counter({ value, suffix = "" }: CounterProps) {
     const inView = useInView(ref, { once: true, margin: "-10% 0px" })
     const reduced = useReducedMotion()
     const motionValue = useMotionValue(0)
-    const spring = useSpring(motionValue, { duration: 1.6, bounce: 0 })
+    const spring = useSpring(motionValue, { stiffness: 60, damping: 20, mass: 1 })
 
     useEffect(() => {
         if (inView) motionValue.set(value)

@@ -1,4 +1,3 @@
-// components/about/about_doctor.tsx
 "use client"
 
 import Image from 'next/image'
@@ -12,7 +11,7 @@ import { expertise_areas, memberships, credentials } from '@/constants/about_hos
 
 export default function AboutDoctor() {
     return (
-        <Section className='bg-rose-50/40'>
+        <Section>
             <Wrapper>
                 <div className='grid md:grid-cols-[0.85fr_1.15fr] gap-12 md:gap-16 items-start'>
                     <div className='md:sticky md:top-24'>
