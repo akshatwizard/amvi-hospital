@@ -13,7 +13,7 @@ export default function Specialties() {
         <Section>
             <Wrapper>
                 <div className='grid md:grid-cols-[1fr_1.4fr] gap-8 md:gap-16'>
-                    <div className='sticky top-20 self-start'>
+                    <div className='md:sticky md:top-20 self-start'>
                         <Reveal>
                             <span className='inline-flex items-center gap-2 text-xs text-rose-700 bg-rose-50 rounded-full px-3.5 py-1.5 w-fit'>
                                 What we treat
@@ -48,7 +48,7 @@ export default function Specialties() {
                                         <p className='font-serif text-2xl md:text-3xl text-plum-ink group-hover:text-rose-700 transition-colors'>
                                             {item.name}
                                         </p>
-                                        <p className='text-sm text-warm-slate mt-1 hidden md:block'>
+                                        <p className='md:text-sm text-xs text-warm-slate mt-1 block'>
                                             {item.description}
                                         </p>
                                     </div>
