@@ -1,12 +1,11 @@
 import HomeHero from "@/components/home/hero";
-import HeroBg from "@/shared/hero_bg";
-import Image from "next/image";
+import Specialties from "@/components/home/specialties";
 
 export default function Home() {
   return (
     <main>
       <HomeHero />
-      <div className="h-screen"></div>
+      <Specialties />
     </main>
   );
 }
