@@ -3,6 +3,7 @@ import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layouts/header";
 import TopBar from "@/components/layouts/top_bar";
+import DesktopNav from "@/components/layouts/desktop_nav";
 
 
 const fraunces = Fraunces({
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <TopBar />
         <Header />
+        <DesktopNav />
         {children}
       </body>
     </html>
