@@ -4,12 +4,14 @@ import Highlights from "@/components/home/highlights";
 import AboutHospital from "@/components/home/about_hospital";
 import AboutDoctor from "@/components/home/about_doctor";
 import Testimonials from "@/components/home/testimonials";
+import CareJourney from "@/components/home/care_journey";
 
 export default function Home() {
   return (
     <main>
       <HomeHero />
       <Specialties />
+      <CareJourney />
       <Highlights />
       <AboutHospital />
       <AboutDoctor />
