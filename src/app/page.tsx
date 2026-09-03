@@ -10,6 +10,7 @@ import BeforeYouGo from "@/components/home/before_you_go";
 import Locations from "@/components/home/locations";
 import ContactBanner from "@/components/home/contact_banner";
 import CareTeam from "@/components/home/care_team";
+import BlogPreview from "@/components/home/blog_preview";
 
 export default function Home() {
   return (
@@ -21,9 +22,10 @@ export default function Home() {
       <Testimonials />
       <AboutHospital />
       <AboutDoctor />
-      <CareTeam/>
+      <CareTeam />
       <BeforeYouGo />
       <Faq />
+      <BlogPreview />
       <Locations />
       <ContactBanner />
     </main>
