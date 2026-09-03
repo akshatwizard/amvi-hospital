@@ -60,15 +60,14 @@ export default function HomeHero() {
                 </div>
 
                 <div className='relative w-full h-full flex items-center justify-center'>
-                    <Reveal delay={0.2} y={40} className='relative w-full overflow-hidden'>
+                    <Reveal delay={0.2} y={40} className='relative w-full'>
                         <Image
                             src="/images/hero/home-hero.png"
                             alt="Doctor consulting a patient at AMVI Hospital"
                             width={1080}
                             height={1080}
                             priority
-                            sizes="(min-width: 768px) 480px, 90vw"
-                            className='object-cover w-auto h-full'
+                            className='object-cover object-top w-full h-180'
                         />
                     </Reveal>
 
