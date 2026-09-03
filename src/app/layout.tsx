@@ -5,6 +5,7 @@ import Header from "@/components/layouts/header";
 import TopBar from "@/components/layouts/top_bar";
 import DesktopNav from "@/components/layouts/desktop_nav";
 import SmoothScrollProvider from "@/providers/smooth_scroll_provider";
+import Footer from "@/components/layouts/footer";
 
 
 const fraunces = Fraunces({
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Header />
           <DesktopNav />
           {children}
+          <Footer />
         </body>
       </SmoothScrollProvider>
     </html>
