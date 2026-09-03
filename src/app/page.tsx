@@ -9,6 +9,7 @@ import Faq from "@/components/home/faq";
 import BeforeYouGo from "@/components/home/before_you_go";
 import Locations from "@/components/home/locations";
 import ContactBanner from "@/components/home/contact_banner";
+import CareTeam from "@/components/home/care_team";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonials />
       <AboutHospital />
       <AboutDoctor />
+      <CareTeam/>
       <BeforeYouGo />
       <Faq />
       <Locations />
