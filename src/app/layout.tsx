@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
-import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import { Fraunces, Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layouts/header";
 import TopBar from "@/components/layouts/top_bar";
 import DesktopNav from "@/components/layouts/desktop_nav";
 import SmoothScrollProvider from "@/providers/smooth_scroll_provider";
 import Footer from "@/components/layouts/footer";
+import { cn } from "@/lib/utils";
 
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -29,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${jakarta.variable} antialiased`}
+      className={cn("antialiased", fraunces.variable, jakarta.variable, "font-sans", inter.variable)}
     >
       <SmoothScrollProvider>
         <body>

@@ -1,9 +1,12 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-jakarta);
+  --font-sans: var(--font-sans);
   --font-serif: var(--font-fraunces);
 
   /* Core palette */
@@ -36,11 +39,6 @@
   /* Radius / shadow tokens — soft, not the default SaaS card shadow */
   --radius-card: 1.5rem;
   --shadow-soft: 0 12px 40px -12px rgb(44 18 32 / 0.14);
-}
-
-:root {
-  --background: var(--color-petal-white);
-  --foreground: var(--color-plum-ink);
 }
 
 :is(h1, h2, h3, h4, h5, h6) {

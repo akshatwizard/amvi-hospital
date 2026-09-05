@@ -36,7 +36,7 @@ export const doctors: Doctor[] = [
         name: "Dr. P Gita Krishna",
         designation: "MBBS, MDRD — Consultant Radiologist",
         experience: "12+",
-        image: "/images/doctor/dr-gita-krishna.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "A senior interventional radiologist specialising in Doppler scans in pregnancy, growth scans, TIFFA and anomaly scans, and 3D/4D ultrasound — regarded as one of Hyderabad's leading radiologists for prenatal imaging.",
     },
     {
@@ -44,7 +44,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Ganesh",
         designation: "MBBS, MD — Paediatrician",
         experience: "25+",
-        image: "/images/doctor/dr-ganesh.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "A senior consultant paediatrician with expertise in infant growth and development, newborn care, vaccination and behavioural disorders, including handling extreme preterm and preterm babies.",
     },
     {
@@ -52,7 +52,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Sumanth",
         designation: "MD — Internal Medicine",
         experience: "12+",
-        image: "/images/doctor/dr-sumanth.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "A patient-centred internal medicine physician focused on managing chronic conditions like diabetes, hypertension and heart disease, alongside acute illness and preventive care.",
     },
     {
@@ -60,7 +60,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Mohana Nandigam",
         designation: "Clinical Psychologist",
         experience: "12+",
-        image: "/images/doctor/dr-mohana-nandigam.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "Specialises in anxiety, depression and trauma through evidence-based approaches including cognitive-behavioural therapy, with comprehensive support spanning outpatient care to advanced treatments.",
     },
     {
@@ -68,7 +68,7 @@ export const doctors: Doctor[] = [
         name: "Sharanya Kamaraju",
         designation: "Genetic Counselor",
         experience: "3+",
-        image: "/images/doctor/sharanya-kamaraju.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "A certified genetic counselor specialising in reproductive genetics, prenatal counseling, and paediatric neurogenetics and oncology, supporting families navigating complex genetic conditions.",
     },
     {
@@ -76,7 +76,7 @@ export const doctors: Doctor[] = [
         name: "Dr. S. Manish",
         designation: "Junior Embryologist",
         experience: "1+",
-        image: "/images/doctor/dr-s-manish.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "Skilled in IVF lab procedures, embryo culture and laboratory protocols, contributing to successful outcomes through precision and scientific rigour.",
     },
     {
@@ -84,7 +84,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Divya",
         designation: "Senior Anesthetist",
         experience: "10+",
-        image: "/images/doctor/dr-divya.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "Extensive experience in obstetric and gynaecological anaesthesia, including painless epidural analgesia for labour and monitored anaesthesia care for infertility procedures.",
     },
     {
@@ -92,7 +92,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Sushmitha",
         designation: "Obstetrics & Gynaecology",
         experience: "3+",
-        image: "/images/doctor/dr-sushmitha.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "Completed DNB in Obstetrics & Gynaecology and a fellowship in Reproductive Medicine, with experience managing PCOS, endometriosis, tubal factors and poor ovarian reserve across the full IVF/ICSI spectrum.",
     },
     {
@@ -100,7 +100,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Jampani Ravitheja",
         designation: "Consultant Orthopedic Surgeon",
         experience: "8+",
-        image: "/images/doctor/dr-jampani-ravitheja.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "Specialises in knee and hip replacement, arthroscopy and trauma surgery, with more than 1,500 joint replacement surgeries and 3,000+ trauma and fracture surgeries performed.",
     },
     {
@@ -108,7 +108,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Gayathri",
         designation: "Infertility Specialist",
         experience: "10+",
-        image: "/images/doctor/dr-gayathri.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "Specialises in ovum pickups, embryo transfers, diagnostic hysteroscopy and D&C procedures, with a strong focus on counselling patients through the causes and options for infertility.",
     },
     {
@@ -116,7 +116,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Rajyalakshmi",
         designation: "MBBS, MD — Consultant Physician",
         experience: "8+",
-        image: "/images/doctor/dr-rajyalakshmi.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "A general physician experienced in treating hypertension, respiratory illness, allergies, asthma and infectious diseases.",
     },
     {
@@ -124,7 +124,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Priyanka Reddy",
         designation: "MBBS, MS (OBG) — Obstetrician, Gynaecologist & Infertility Specialist",
         experience: "10+",
-        image: "/images/doctor/dr-priyanka-reddy.jpg",
+        image: "/images/doctor/dr-sushmita.png",
         bio: "Experienced in handling recurring IVF failures, PCOS-related infertility, male infertility and poor ovarian reserve, across IUI, IVF, ICSI, embryo cryopreservation and PGS/PGD.",
     },
 ]

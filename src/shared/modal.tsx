@@ -55,6 +55,7 @@ export default function Modal({ open, onClose, children, labelledBy }: ModalProp
                         exit={reduced ? { opacity: 0 } : { opacity: 0, y: 20, scale: 0.97 }}
                         transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
                         className='relative bg-petal-white rounded-card shadow-soft w-full max-w-lg max-h-[85vh] overflow-y-auto'
+                        style={{scrollbarWidth:"none"}}
                     >
                         <button
                             onClick={onClose}
