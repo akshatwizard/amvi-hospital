@@ -37,7 +37,7 @@ export default function Modal({ open, onClose, children, labelledBy }: ModalProp
     return createPortal(
         <AnimatePresence>
             {open && (
-                <div className='fixed inset-0 z-100 flex items-center justify-center p-4'>
+                <div className='fixed inset-0 z-100 flex items-center justify-center p-4' data-lenis-prevent>
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}

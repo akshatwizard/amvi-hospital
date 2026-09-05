@@ -8,7 +8,7 @@ export default function AboutDoctorHero() {
             title={leadDoctor.name}
             description={leadDoctor.tagline}
             breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Our Doctors" }]}
-            image={leadDoctor.image}
+            image={"/images/hero/about-hero.png"}
             imageAlt={leadDoctor.name}
         />
     )
