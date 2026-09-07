@@ -101,7 +101,7 @@ export default function DesktopNav() {
                                                             <div className="whitespace-nowrap text-sm text-sage-500 mb-3">
                                                                 {col.title}
                                                             </div>
-                                                            <div className="flex flex-col gap-1.5">
+                                                            <div className="flex flex-col gap-2.5">
                                                                 {col.items.map((sub) => (
                                                                     <Link
                                                                         key={sub.name}
