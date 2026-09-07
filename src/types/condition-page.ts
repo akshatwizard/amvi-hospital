@@ -30,3 +30,9 @@ export interface ConditionNavLink {
     name: string
     href: string
 }
+
+export interface TreatmentOption {
+    title: string
+    description: string
+    stats?: string[]
+}
