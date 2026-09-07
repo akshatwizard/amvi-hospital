@@ -48,7 +48,7 @@ export default function GynaecologyOverview() {
 
                     <Reveal delay={0.15} className='relative w-full aspect-4/3 rounded-card overflow-hidden'>
                         <Image
-                            src="/images/gynaecology/laparoscopic-myomectomy.png"
+                            src="/images/gynaecology/pcod-overview.jpeg"
                             alt="Laparoscopic myomectomy procedure at AMVI Hospital"
                             fill
                             sizes="(min-width: 768px) 480px, 90vw"

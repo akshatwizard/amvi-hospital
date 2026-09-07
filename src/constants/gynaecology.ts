@@ -10,37 +10,37 @@ export const gynaecologyConditions: Condition[] = [
     {
         name: "PCOS",
         description: "Polycystic ovary syndrome (PCOS) is a hormonal disorder that's more common among women of reproductive age, often affecting periods, fertility and metabolic health.",
-        image: "/images/gynaecology/pcos.jpg",
+        image: "/images/gynaecology/pcoc.jpeg",
         href: "/gynaecology/pcos",
     },
     {
         name: "Endometriosis",
         description: "One of the most common gynaecological conditions, where tissue similar to the lining of the womb grows outside the uterus, often causing pain and affecting fertility.",
-        image: "/images/gynaecology/endometriosis.jpg",
+        image: "/images/gynaecology/endometriosis.jpeg",
         href: "/gynaecology/endometriosis",
     },
     {
         name: "Menstrual Problems",
         description: "Menstrual cycles can bring a range of uncomfortable symptoms leading up to your period, including premenstrual syndrome (PMS), irregular cycles and heavy bleeding.",
-        image: "/images/gynaecology/menstrual-problems.jpg",
+        image: "/images/gynaecology/menstrual-problems.jpeg",
         href: "/gynaecology/menstrual-problems",
     },
     {
         name: "Gynecological Endocrine Disorders",
         description: "Hormonal imbalances affecting the reproductive system, from thyroid-related irregularities to conditions that disrupt ovulation and the menstrual cycle.",
-        image: "/images/gynaecology/endocrine-disorders.jpg",
+        image: "/images/gynaecology/endocrine-disorders.jpeg",
         href: "/gynaecology/endocrine-disorders",
     },
     {
         name: "Uterine Fibroids",
         description: "Non-cancerous growths in or around the uterus that can cause heavy periods, pelvic pressure and, in some cases, fertility complications.",
-        image: "/images/gynaecology/uterine-fibroids.jpg",
+        image: "/images/gynaecology/uterine-fibroids.jpeg",
         href: "/gynaecology/uterine-fibroids",
     },
     {
         name: "Contraception",
         description: "Personalised guidance on contraceptive options — from short-term to long-acting methods — tailored to your health, lifestyle and family planning goals.",
-        image: "/images/gynaecology/contraception.jpg",
+        image: "/images/gynaecology/contraception.jpeg",
         href: "/gynaecology/contraception",
     },
 ]
