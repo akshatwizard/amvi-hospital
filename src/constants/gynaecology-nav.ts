@@ -13,3 +13,11 @@ export const gynaecologyConditionNav: ConditionNavLink[] = [
     { name: "Adenomyosis", href: "/gynaecology/adenomyosis" },
     { name: "Low AMH", href: "/gynaecology/low-amh" },
 ]
+
+export const cancersConditionNav: ConditionNavLink[] = [
+    { name: "Cervical Cancer", href: "/gynaecology/cancers/cervical" },
+    { name: "Endometrial Cancer", href: "/gynaecology/cancers/endometrial" },
+    { name: "Vulvar Cancer", href: "/gynaecology/cancers/vulvar" },
+    { name: "Ovarian Cancer", href: "/gynaecology/cancers/ovarian" },
+    { name: "Breast Cancer", href: "/gynaecology/cancers/breast" },
+]
