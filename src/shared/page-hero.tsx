@@ -67,7 +67,7 @@ export default function PageHero({ eyebrow, title, description, breadcrumbs, ima
             <Wrapper bare
                 className={cn(
                     'relative py-14 md:py-24 gap-4!',
-                    hasImage && 'md:py-28 min-h-[46vh] flex flex-col justify-center'
+                    hasImage && 'md:py-28 min-h-[76vh] flex flex-col justify-center'
                 )}>
                 <Reveal>
                     <nav className={cn('flex items-center gap-1.5 text-xs mb-3', hasImage ? 'text-rose-100/70' : 'text-warm-slate')}>
