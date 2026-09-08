@@ -9,7 +9,9 @@ export default function ConditionSidebar({ links, category }: { links: Condition
     const pathname = usePathname()
 
     return (
-        <nav className='hidden lg:sticky lg:top-24 lg:self-start lg:flex flex-col gap-1 border-r border-rose-100 pr-6'>
+        <nav className='hidden lg:sticky lg:top-24 lg:self-start lg:flex flex-col gap-1 border-r border-rose-100 pr-6 max-h-[86vh] w-full overflow-y-auto'
+        data-lenis-prevent 
+        >
             <p className='text-xs text-sage-500 mb-2'>{category}</p>
             {links.map((link) => {
                 const active = pathname === link.href

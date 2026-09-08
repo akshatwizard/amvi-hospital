@@ -47,3 +47,23 @@
 :is(p, span, button, li, div, a) {
   font-family: var(--font-sans);
 }
+
+
+::-webkit-scrollbar {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-rose-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-rose-500);
+  border-radius: 100%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-rose-100);
+}
