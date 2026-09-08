@@ -36,3 +36,8 @@ export interface TreatmentOption {
     description: string
     stats?: string[]
 }
+
+export interface NamedGroup {
+    heading: string
+    items: string[]
+}

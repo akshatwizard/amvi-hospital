@@ -53,7 +53,7 @@ export default function OvarianCancerContent() {
                                 <p className='text-sm md:text-base text-warm-slate leading-relaxed'>{ovarianCancerIntro}</p>
                             </Reveal>
                         </div>
-                        <Reveal delay={0.15} className='relative w-full aspect-[4/3] rounded-card overflow-hidden'>
+                        <Reveal delay={0.15} className='relative w-full aspect-4/3 rounded-card overflow-hidden'>
                             <Image src="/images/gynaecology/ovarian-cancer-overview.jpg" alt="Ovarian cancer overview" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
                         </Reveal>
                     </div>
