@@ -22,7 +22,7 @@ export default function BreastCancerContent() {
     return (
         <Section className='bg-petal-white'>
             <Wrapper className='grid lg:grid-cols-[240px_1fr] gap-12 lg:gap-16'>
-                <ConditionSidebar links={cancersConditionNav} />
+                <ConditionSidebar links={cancersConditionNav} category='Cancer' />
 
                 <div className='flex flex-col gap-20'>
                     {/* Author byline + stats */}
