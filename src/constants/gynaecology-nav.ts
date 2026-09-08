@@ -29,3 +29,22 @@ export const urogynecologyConditionNav: ConditionNavLink[] = [
     { name: "Cystoscopy", href: "/gynaecology/uro/cystoscopy" },
 ]
 
+export const infertilityConditionNav: ConditionNavLink[] = [
+    { name: "Infertility Assessment", href: "/infertility/assessment" },
+    { name: "Genetic Screening", href: "/infertility/genetic-screening" },
+    { name: "Follicular Monitoring", href: "/infertility/follicular-monitoring" },
+    { name: "Ovulation Induction", href: "/infertility/ovulation-induction" },
+    { name: "CASA", href: "/infertility/casa" },
+    { name: "Oligospermia", href: "/infertility/male/oligospermia" },
+    { name: "Erectile Dysfunction", href: "/infertility/male/erectile-dysfunction" },
+    { name: "Varicocele", href: "/infertility/male/varicocele" },
+    { name: "Asthenospermia", href: "/infertility/male/asthenospermia" },
+    { name: "Azoospermia", href: "/infertility/male/azoospermia" },
+    { name: "IVF", href: "/infertility/ivf" },
+    { name: "ICSI", href: "/infertility/icsi" },
+    { name: "IMSI", href: "/infertility/imsi" },
+    { name: "Stem Cell IVF", href: "/infertility/stem-cell-ivf" },
+    { name: "IUI", href: "/infertility/iui" },
+    { name: "PICSI", href: "/infertility/picsi" },
+    { name: "IVF Failure", href: "/infertility/ivf-failure" },
+]
