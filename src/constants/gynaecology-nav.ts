@@ -21,3 +21,11 @@ export const cancersConditionNav: ConditionNavLink[] = [
     { name: "Ovarian Cancer", href: "/gynaecology/cancers/ovarian" },
     { name: "Breast Cancer", href: "/gynaecology/cancers/breast" },
 ]
+
+export const urogynecologyConditionNav: ConditionNavLink[] = [
+    { name: "Prolapse", href: "/gynaecology/uro/prolapse" },
+    { name: "Urinary Incontinence", href: "/gynaecology/uro/urinary-incontinence" },
+    { name: "Pelvic Reconstruction", href: "/gynaecology/uro/pelvic-reconstruction" },
+    { name: "Cystoscopy", href: "/gynaecology/uro/cystoscopy" },
+]
+
