@@ -106,7 +106,7 @@ export const navItems: MenuItem[] = [
         href: "/laparoscopy",
         description: "Minimally invasive procedures with faster recovery.",
         sub_menu: [
-            { name: "Laparoscopic surgery overview", href: "/laparoscopy" },
+            // { name: "Laparoscopic surgery overview", href: "/laparoscopy" },
             { name: "Laparoscopic hysterectomy", href: "/laparoscopy/hysterectomy" },
             { name: "Laparoscopic myomectomy", href: "/laparoscopy/myomectomy" },
             { name: "Tubal recanalization", href: "/laparoscopy/tubal-recanalization" },
