@@ -46,3 +46,9 @@ export interface ProcessStep {
     title: string
     points: string[]
 }
+
+export interface ComparisonTable {
+    columns: string[]
+    rows: string[][]
+}
+
