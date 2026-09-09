@@ -41,3 +41,8 @@ export interface NamedGroup {
     heading: string
     items: string[]
 }
+
+export interface ProcessStep {
+    title: string
+    points: string[]
+}
