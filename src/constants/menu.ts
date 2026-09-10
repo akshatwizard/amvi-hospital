@@ -127,7 +127,6 @@ export const navItems: MenuItem[] = [
                     { name: "Vaginal reconstruction", href: "/cosmetic-gynecology/vaginal-reconstruction" },
                     { name: "Labial reconstruction", href: "/cosmetic-gynecology/labial-reconstruction" },
                     { name: "Hymenoplasty", href: "/cosmetic-gynecology/hymenoplasty" },
-                    { name: "Perineal reconstruction", href: "/cosmetic-gynecology/perineal-reconstruction" },
                     { name: "Vaginal tightening surgery", href: "/cosmetic-gynecology/vaginal-tightening" },
                 ],
             },
