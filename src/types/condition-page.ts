@@ -52,3 +52,7 @@ export interface ComparisonTable {
     rows: string[][]
 }
 
+export interface QuickFact {
+    label: string;
+    value: string
+}
