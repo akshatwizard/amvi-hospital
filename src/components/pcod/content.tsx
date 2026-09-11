@@ -58,7 +58,7 @@ export default function PcodContent() {
                             </div>
                         </div>
                         <Reveal delay={0.15} className='relative w-full aspect-4/3 rounded-card overflow-hidden'>
-                            <Image src="/images/gynaecology/pcod-overview.jpeg" alt="PCOD consultation" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
+                            <Image src="/images/gynaecology/pcod-overview-new.jpeg" alt="PCOD consultation" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
                         </Reveal>
                     </div>
 

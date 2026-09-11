@@ -72,7 +72,7 @@ export default function PcosContent() {
                             </Reveal>
                         </div>
                         <Reveal delay={0.15} className='relative w-full aspect-4/3 rounded-card overflow-hidden'>
-                            <Image src="/images/gynaecology/pcos-overview.jpg" alt="PCOS diagram" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
+                            <Image src="/images/gynaecology/pcos-overview.jpeg" alt="PCOS diagram" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
                         </Reveal>
                     </div>
 

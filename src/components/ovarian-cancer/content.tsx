@@ -54,7 +54,7 @@ export default function OvarianCancerContent() {
                             </Reveal>
                         </div>
                         <Reveal delay={0.15} className='relative w-full aspect-4/3 rounded-card overflow-hidden'>
-                            <Image src="/images/gynaecology/ovarian-cancer-overview.jpg" alt="Ovarian cancer overview" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
+                            <Image src="/images/gynaecology/ovarian-cancer-overview.jpeg" alt="Ovarian cancer overview" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
                         </Reveal>
                     </div>
 

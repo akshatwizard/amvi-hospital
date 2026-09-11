@@ -69,7 +69,7 @@ export default function FollicularMonitoringContent() {
                             </div>
                         </div>
                         <Reveal delay={0.15} className='relative w-full aspect-4/3 rounded-card overflow-hidden'>
-                            <Image src="/images/infertility/follicular-monitoring-overview.jpeg" alt="Follicular monitoring ultrasound" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
+                            <Image src="/images/infertility/follicular-monitoring-overview.png" alt="Follicular monitoring ultrasound" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
                         </Reveal>
                     </div>
 

@@ -52,7 +52,7 @@ export default function CasaContent() {
                             </div>
                         </div>
                         <Reveal delay={0.15} className='relative w-full aspect-4/3 rounded-card overflow-hidden'>
-                            <Image src="/images/infertility/casa-overview.jpeg" alt="Computer assisted semen analysis lab" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
+                            <Image src="/images/infertility/casa-overview.png" alt="Computer assisted semen analysis lab" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
                         </Reveal>
                     </div>
 
