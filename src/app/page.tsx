@@ -11,6 +11,7 @@ import Locations from "@/components/home/locations";
 import ContactBanner from "@/components/home/contact_banner";
 import CareTeam from "@/components/home/care_team";
 import BlogPreview from "@/components/home/blog_preview";
+import SocialInsights from "@/components/social-insights/social-insights";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <AboutDoctor />
       <CareTeam />
       <BeforeYouGo />
+      <SocialInsights/>
       <Faq />
       <BlogPreview />
       <Locations />
