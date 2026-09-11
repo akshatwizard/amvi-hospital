@@ -71,7 +71,7 @@ export default function AsthenospermiaContent() {
                             </div>
                         </div>
                         <Reveal delay={0.15} className='relative w-full aspect-4/3 rounded-card overflow-hidden'>
-                            <Image src="/images/infertility/asthenospermia-overview.jpeg" alt="Sperm motility consultation" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
+                            <Image src="/images/infertility/asthenospermia-overview.png" alt="Sperm motility consultation" fill sizes="(min-width: 768px) 480px, 90vw" className='object-cover' />
                         </Reveal>
                     </div>
 
