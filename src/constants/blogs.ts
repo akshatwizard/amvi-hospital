@@ -12,6 +12,11 @@ export interface Blog {
     readTime: string
     image: string
     sections: BlogSection[]
+    // Only posts confirmed against the old site's own blog-archive markup
+    // (pasted directly by the client) are published. Posts found only via
+    // web-search excerpts are kept in the data but hidden until confirmed
+    // the same way. Flip to true once verified.
+    published: boolean
 }
 
 // NOTE ON IMAGES: amvihospitals.com blocks automated fetching of its /blogs/
@@ -28,6 +33,7 @@ export const blogs: Blog[] = [
         date: "September 12, 2026",
         readTime: "6 min read",
         image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=900&h=600&fit=crop",
+        published: false,
         sections: [
             {
                 heading: "A question almost every expecting mother asks",
@@ -77,6 +83,7 @@ export const blogs: Blog[] = [
         date: "September 8, 2026",
         readTime: "6 min read",
         image: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=900&h=600&fit=crop",
+        published: false,
         sections: [
             {
                 heading: "Where every IVF journey actually begins",
@@ -119,6 +126,7 @@ export const blogs: Blog[] = [
         date: "September 3, 2026",
         readTime: "5 min read",
         image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/08/fitness-healthy-lifestyle-concept-female-is-resting-eating-healthy-oatmeal-after-workout-top-view-1024x641.jpg",
+        published: true,
         sections: [
             {
                 heading: "The inflammation connection",
@@ -161,6 +169,7 @@ export const blogs: Blog[] = [
         date: "August 29, 2026",
         readTime: "5 min read",
         image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-20-at-3.00.42-PM-1024x682.jpeg",
+        published: true,
         sections: [
             {
                 heading: "What monsplasty actually is",
@@ -203,6 +212,7 @@ export const blogs: Blog[] = [
         date: "August 24, 2026",
         readTime: "5 min read",
         image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/fpkdl.com_960_side-view-doctor-holding-anatomic-model_23-2149351653.jpg",
+        published: true,
         sections: [
             {
                 heading: "More than a cosmetic procedure",
@@ -245,6 +255,7 @@ export const blogs: Blog[] = [
         date: "August 19, 2026",
         readTime: "6 min read",
         image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/09/gynecologist-talking-with-young-female-patient-medical-consultation-modern-clinic-patient-with-gynecologist-consultation-gynecological-office-1024x683.jpg",
+        published: true,
         sections: [
             {
                 heading: "A breakthrough that uses your own body's healing power",
@@ -288,6 +299,7 @@ export const blogs: Blog[] = [
         date: "August 14, 2026",
         readTime: "5 min read",
         image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/07/doctor-explaining-anatomic-model-patient-1024x683.jpg",
+        published: true,
         sections: [
             {
                 heading: "A specialty, not an afterthought",
@@ -330,6 +342,7 @@ export const blogs: Blog[] = [
         date: "August 9, 2026",
         readTime: "6 min read",
         image: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=900&h=600&fit=crop",
+        published: false,
         sections: [
             {
                 heading: "The same surgery, a very different experience",
@@ -372,6 +385,7 @@ export const blogs: Blog[] = [
         date: "August 4, 2026",
         readTime: "5 min read",
         image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/freepicdownloader.com-uterus-doctor-with-anatomy-model-study-diagnosis-treatment-hospital-large-1.webp",
+        published: true,
         sections: [
             {
                 heading: "What an episiotomy actually is",
@@ -414,6 +428,7 @@ export const blogs: Blog[] = [
         date: "July 30, 2026",
         readTime: "5 min read",
         image: "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=900&h=600&fit=crop",
+        published: false,
         sections: [
             {
                 heading: "What AMH actually measures",
@@ -458,6 +473,7 @@ export const blogs: Blog[] = [
         date: "September 15, 2026",
         readTime: "4 min read",
         image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/07/97233.jpg",
+        published: true,
         sections: [
             {
                 heading: "Why many mothers choose the natural path",
@@ -488,6 +504,7 @@ export const blogs: Blog[] = [
         date: "September 14, 2026",
         readTime: "4 min read",
         image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/07/Cosmetic-Gynaecology-with-Restoring-Confidence-Comfort-and-Intimate-Wellness-1024x1024.webp",
+        published: true,
         sections: [
             {
                 heading: "Function and comfort, not just appearance",
@@ -518,6 +535,7 @@ export const blogs: Blog[] = [
         date: "September 13, 2026",
         readTime: "4 min read",
         image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/fpkdl.com_960_operation-stomach-medical-procedure-treating-patient-with-surgical-intervention-operating-room_158518-20007.webp",
+        published: true,
         sections: [
             {
                 heading: "Preparing the body, not just waiting for the day",
@@ -548,6 +566,7 @@ export const blogs: Blog[] = [
         date: "September 11, 2026",
         readTime: "4 min read",
         image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/gynaecology-diseases-and-surgery.webp",
+        published: true,
         sections: [
             {
                 heading: "Common issues across a reproductive lifetime",
@@ -578,6 +597,7 @@ export const blogs: Blog[] = [
         date: "September 9, 2026",
         readTime: "4 min read",
         image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/fertility-and-healthy-living.webp",
+        published: true,
         sections: [
             {
                 heading: "Lifestyle plays a real role",

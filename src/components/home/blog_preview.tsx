@@ -38,7 +38,7 @@ export default function BlogPreview() {
                 </div>
 
                 <StaggerContainer className='grid md:grid-cols-3 gap-6'>
-                    {blogs.slice(0, 3).map((post) => (
+                    {blogs.filter((post) => post.published).slice(0, 3).map((post) => (
                         <StaggerItem key={post.slug}>
                             <Link href={`/blog/${post.slug}`} className='group flex flex-col gap-4'>
                                 <div className='relative w-full aspect-4/3 rounded-card overflow-hidden bg-rose-100'>

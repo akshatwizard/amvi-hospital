@@ -9,12 +9,16 @@ type Props = {
 };
 
 export function generateStaticParams() {
-    return blogs.map((blog) => ({ slug: blog.slug }));
+    return blogs.filter((blog) => blog.published).map((blog) => ({ slug: blog.slug }));
 }
+
+// Only pre-generated (published) slugs are servable — an unpublished or
+// unknown slug renders 404 instead of being generated on demand.
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
-    const blog = blogs.find((b) => b.slug === slug);
+    const blog = blogs.find((b) => b.slug === slug && b.published);
     if (!blog) return {};
 
     return {
@@ -26,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogPostPage({ params }: Props) {
     const { slug } = await params;
-    const blog = blogs.find((b) => b.slug === slug);
+    const blog = blogs.find((b) => b.slug === slug && b.published);
     if (!blog) notFound();
 
     return (

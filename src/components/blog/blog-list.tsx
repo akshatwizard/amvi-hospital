@@ -42,7 +42,7 @@ export default function BlogList() {
 
                     {/* Blog Grid */}
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {blogs.map((blog, index) => (
+                        {blogs.filter((blog) => blog.published).map((blog, index) => (
                             <Reveal
                                 key={blog.slug}
                                 delay={index * 0.08}
