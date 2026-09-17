@@ -7,7 +7,7 @@ import { FacebookIcon, InstagramIcon } from '@/shared/social_icons'
 
 const quick_links = [
     { name: "About AMVI", href: "/about" },
-    { name: "About the Doctor", href: "/about/doctor" },
+    { name: "About the Doctor", href: "/about/doctors" },
     { name: "Blog", href: "/blog" },
     { name: "FAQs", href: "/#faq" },
 ]
