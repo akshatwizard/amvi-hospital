@@ -80,6 +80,7 @@ export const navItems: MenuItem[] = [
             {
                 title: "Male fertility",
                 items: [
+                    { name: "Male infertility overview", href: "/infertility/male" },
                     { name: "Oligospermia", href: "/infertility/male/oligospermia" },
                     { name: "Erectile dysfunction", href: "/infertility/male/erectile-dysfunction" },
                     { name: "Varicocele", href: "/infertility/male/varicocele" },
@@ -97,6 +98,7 @@ export const navItems: MenuItem[] = [
                     { name: "IUI", href: "/infertility/iui" },
                     { name: "PICSI", href: "/infertility/picsi" },
                     { name: "IVF failure", href: "/infertility/ivf-failure" },
+                    { name: "Fertility Preservation", href: "/fertility-preservation" },
                 ],
             },
         ],
@@ -106,13 +108,13 @@ export const navItems: MenuItem[] = [
         href: "/laparoscopy",
         description: "Minimally invasive procedures with faster recovery.",
         sub_menu: [
-            // { name: "Laparoscopic surgery overview", href: "/laparoscopy" },
+            { name: "Laparoscopic surgery overview", href: "/laparoscopy" },
             { name: "Laparoscopic hysterectomy", href: "/laparoscopy/hysterectomy" },
             { name: "Laparoscopic myomectomy", href: "/laparoscopy/myomectomy" },
             { name: "Tubal recanalization", href: "/laparoscopy/tubal-recanalization" },
-            { name: "Laparoscopic ovarian cyst surgery", href: "/laparoscopy/ovarian-cyst" },
+            { name: "Laparoscopic ovarian cyst surgery", href: "/laparoscopy" },
             { name: "Operative hysteroscopy", href: "/laparoscopy/operative-hysteroscopy" },
-            { name: "Diagnostic laparoscopy", href: "/laparoscopy/diagnostic" },
+            { name: "Diagnostic laparoscopy", href: "/laparoscopy/diagnostic-laparoscopy" },
         ],
     },
     {
@@ -124,6 +126,7 @@ export const navItems: MenuItem[] = [
             {
                 title: "Reconstructive care",
                 items: [
+                    { name: "Cosmetic gynecology overview", href: "/cosmetic-gynecology" },
                     { name: "Vaginal reconstruction", href: "/cosmetic-gynecology/vaginal-reconstruction" },
                     { name: "Labial reconstruction", href: "/cosmetic-gynecology/labial-reconstruction" },
                     { name: "Hymenoplasty", href: "/cosmetic-gynecology/hymenoplasty" },
@@ -151,6 +154,7 @@ export const navItems: MenuItem[] = [
             {
                 title: "Pregnancy care",
                 items: [
+                    { name: "Maternity overview", href: "/maternity" },
                     { name: "Pre-pregnancy counselling", href: "/maternity/pre-pregnancy-counselling" },
                     { name: "3D/4D ultrasound", href: "/maternity/3d-4d-ultrasound" },
                     { name: "High risk pregnancy", href: "/maternity/high-risk-pregnancy" },
@@ -208,16 +212,16 @@ export const navItems: MenuItem[] = [
             {
                 title: "Areas we serve",
                 items: [
-                    { name: "Financial District", href: "#", new_tab: true },
-                    { name: "Gachibowli", href: "#", new_tab: true },
-                    { name: "Kokapet", href: "#", new_tab: true },
-                    { name: "Manikonda", href: "#", new_tab: true },
-                    { name: "Mehdipatnam", href: "#", new_tab: true },
-                    { name: "Nanakramguda", href: "#", new_tab: true },
-                    { name: "Narsingi", href: "#", new_tab: true },
-                    { name: "Rajendranagar", href: "#", new_tab: true },
-                    { name: "Shaikpet", href: "#", new_tab: true },
-                    { name: "Tolichowki", href: "#", new_tab: true },
+                    { name: "Financial District", href: "/location/financial-district" },
+                    { name: "Gachibowli", href: "/location/gachibowli" },
+                    { name: "Kokapet", href: "/location/kokapet" },
+                    { name: "Manikonda", href: "/location/manikonda" },
+                    { name: "Mehdipatnam", href: "/location/mehdipatnam" },
+                    { name: "Nanakramguda", href: "/location/nanakramguda" },
+                    { name: "Narsingi", href: "/location/narsingi" },
+                    { name: "Rajendranagar", href: "/location/rajendranagar" },
+                    { name: "Shaikpet", href: "/location/shaikpet" },
+                    { name: "Tolichowki", href: "/location/tolichowki" },
                 ],
             },
         ],
