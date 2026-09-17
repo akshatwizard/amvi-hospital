@@ -34,7 +34,7 @@ export default function BlogList() {
                         <Reveal>
                             <p className="text-sm md:text-base text-warm-slate leading-relaxed mt-4">
                                 Explore expert-backed information on maternity,
-                                women's health, fertility, treatments,
+                                women&apos;s health, fertility, treatments,
                                 diagnostics and everyday wellbeing.
                             </p>
                         </Reveal>
