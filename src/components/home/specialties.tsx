@@ -28,7 +28,7 @@ export default function Specialties() {
                         <Reveal delay={0.25}>
                             <p className='text-warm-slate mt-4 max-w-sm text-sm'>
                                 From your first consultation to delivery day and beyond, our specialists cover
-                                every area of women's health under one roof across both our centers.
+                                every area of women&apos;s health under one roof across both our centers.
                             </p>
                         </Reveal>
 
@@ -55,10 +55,10 @@ export default function Specialties() {
 
                             <div className='flex items-end justify-between pt-1 border-t border-rose-400/40'>
                                 <div className='flex items-start gap-1 pt-2'>
-                                    <span className='font-serif lg:text-7xl text-5xl text-petal-white leading-none'>4.4</span>
+                                    <span className='font-serif lg:text-7xl text-5xl text-petal-white leading-none'>4.9</span>
                                     <Star size={18} className='text-yellow-300 mb-0.5' fill="currentColor" />
                                 </div>
-                                <span className='text-[10px] text-rose-100 uppercase tracking-wide pt-2'>Google Reviews</span>
+                                <span className='text-[10px] text-rose-100 uppercase tracking-wide pt-2'>352 Google Reviews</span>
                             </div>
                         </Reveal>
                     </div>

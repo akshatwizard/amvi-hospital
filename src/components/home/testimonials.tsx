@@ -45,10 +45,10 @@ export default function Testimonials() {
                                         <Star key={i} size={14} className='text-rose-500' fill="currentColor" />
                                     ))}
                                 </div>
-                                <p className='font-serif text-xl text-plum-ink'>4.4</p>
+                                <p className='font-serif text-xl text-plum-ink'>4.9</p>
                                 <span className='size-1 rounded-full bg-rose-300' />
                                 <p className='text-sm text-warm-slate'>
-                                    <Counter value={377} suffix="+" /> Google reviews
+                                    <Counter value={352} /> Google reviews
                                 </p>
                             </div>
                         </Reveal>

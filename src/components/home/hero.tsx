@@ -16,7 +16,7 @@ export default function HomeHero() {
                     <Reveal>
                         <span className='inline-flex items-center gap-2 text-xs text-rose-700 bg-rose-100 rounded-full px-3.5 py-1.5 w-fit'>
                             <span className='size-1.5 rounded-full bg-rose-500' />
-                            Hyderabad's trusted women's hospital
+                            Hyderabad&apos;s trusted women&apos;s hospital
                         </span>
                     </Reveal>
 
@@ -30,7 +30,7 @@ export default function HomeHero() {
                     <Reveal delay={0.3}>
                         <p className='text-warm-slate text-sm md:text-base max-w-lg'>
                             Specialised gynaecology, fertility and maternity care built around you —
-                            led by doctors who've guided over 30,000 families through every stage of the journey.
+                            led by doctors who&apos;ve guided over 30,000 families through every stage of the journey.
                         </p>
                     </Reveal>
 
@@ -94,10 +94,10 @@ export default function HomeHero() {
 
                         <div className='flex items-end justify-between pt-1 border-t border-rose-100'>
                             <div className='flex items-start gap-1 pt-2'>
-                                <span className='font-serif lg:text-7xl text-5xl  text-plum-ink leading-none'>4.4</span>
+                                <span className='font-serif lg:text-7xl text-5xl  text-plum-ink leading-none'>4.9</span>
                                 <Star size={18} className='text-rose-500 mb-0.5' fill="currentColor" />
                             </div>
-                            <span className='text-[10px] text-warm-slate uppercase tracking-wide pt-2'>Google Reviews</span>
+                            <span className='text-[10px] text-warm-slate uppercase tracking-wide pt-2'>352 Google Reviews</span>
                         </div>
                     </Reveal>
                 </div>
