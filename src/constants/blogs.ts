@@ -118,7 +118,7 @@ export const blogs: Blog[] = [
         category: "Women's Health",
         date: "September 3, 2026",
         readTime: "5 min read",
-        image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900&h=600&fit=crop",
+        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/08/fitness-healthy-lifestyle-concept-female-is-resting-eating-healthy-oatmeal-after-workout-top-view-1024x641.jpg",
         sections: [
             {
                 heading: "The inflammation connection",
@@ -160,7 +160,7 @@ export const blogs: Blog[] = [
         category: "Cosmetic Gynecology",
         date: "August 29, 2026",
         readTime: "5 min read",
-        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900&h=600&fit=crop",
+        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-20-at-3.00.42-PM-1024x682.jpeg",
         sections: [
             {
                 heading: "What monsplasty actually is",
@@ -202,7 +202,7 @@ export const blogs: Blog[] = [
         category: "Cosmetic Gynecology",
         date: "August 24, 2026",
         readTime: "5 min read",
-        image: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=900&h=600&fit=crop",
+        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/fpkdl.com_960_side-view-doctor-holding-anatomic-model_23-2149351653.jpg",
         sections: [
             {
                 heading: "More than a cosmetic procedure",
@@ -244,7 +244,7 @@ export const blogs: Blog[] = [
         category: "Cosmetic Gynecology",
         date: "August 19, 2026",
         readTime: "6 min read",
-        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&h=600&fit=crop",
+        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/09/gynecologist-talking-with-young-female-patient-medical-consultation-modern-clinic-patient-with-gynecologist-consultation-gynecological-office-1024x683.jpg",
         sections: [
             {
                 heading: "A breakthrough that uses your own body's healing power",
@@ -287,7 +287,7 @@ export const blogs: Blog[] = [
         category: "Cosmetic Gynecology",
         date: "August 14, 2026",
         readTime: "5 min read",
-        image: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=900&h=600&fit=crop",
+        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/07/doctor-explaining-anatomic-model-patient-1024x683.jpg",
         sections: [
             {
                 heading: "A specialty, not an afterthought",
@@ -371,7 +371,7 @@ export const blogs: Blog[] = [
         category: "Maternity",
         date: "August 4, 2026",
         readTime: "5 min read",
-        image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=900&h=600&fit=crop",
+        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/freepicdownloader.com-uterus-doctor-with-anatomy-model-study-diagnosis-treatment-hospital-large-1.webp",
         sections: [
             {
                 heading: "What an episiotomy actually is",
@@ -443,6 +443,158 @@ export const blogs: Blog[] = [
                 heading: "What to do with your result",
                 paragraphs: [
                     "Whatever your AMH level, the right next step is a conversation with a fertility specialist who can put the number in context with your age, cycle history, and family planning goals. At AMVI Hospitals, AMH testing is available at both branches, with results reviewed directly with Dr. Shaivalini rather than handed over as a number alone.",
+                ],
+            },
+        ],
+    },
+    // --- The 5 posts below are BASIC / first-pass content, matching real old-site topics.
+    // --- Flagged for proper research and expansion later, per instruction.
+    {
+        slug: "vaginal-delivery-natural-birth-guide",
+        title: "Your Guide to Vaginal Delivery: Experience the Joy of Natural Birth",
+        excerpt:
+            "Vaginal delivery follows the body's natural design and is the preferred path for most healthy pregnancies. A basic guide to what it involves.",
+        category: "Maternity",
+        date: "September 15, 2026",
+        readTime: "4 min read",
+        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/07/97233.jpg",
+        sections: [
+            {
+                heading: "Why many mothers choose the natural path",
+                paragraphs: [
+                    "For most healthy pregnancies, vaginal delivery is the preferred and safest option — it works with the body's natural design and tends to mean a faster, more comfortable recovery than surgical delivery.",
+                ],
+            },
+            {
+                heading: "What to expect",
+                paragraphs: [
+                    "Labour progresses through stages of contractions that gradually open the cervix, followed by delivery. Every labour is different in length and intensity, which is why continuous monitoring and support matter throughout.",
+                ],
+            },
+            {
+                heading: "How AMVI supports a natural birth",
+                paragraphs: [
+                    "At AMVI Hospitals, the maternity team supports you through labour with continuous monitoring and pain-relief options where wanted, aiming for the safest possible natural delivery for both mother and baby.",
+                ],
+            },
+        ],
+    },
+    {
+        slug: "cosmetic-gynaecology-confidence-comfort-wellness",
+        title: "Cosmetic Gynaecology: Restoring Confidence, Comfort, and Intimate Wellness",
+        excerpt:
+            "Cosmetic gynaecology addresses both function and appearance of intimate areas affected by childbirth, ageing or hormonal change — with comfort as the goal.",
+        category: "Cosmetic Gynecology",
+        date: "September 14, 2026",
+        readTime: "4 min read",
+        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/07/Cosmetic-Gynaecology-with-Restoring-Confidence-Comfort-and-Intimate-Wellness-1024x1024.webp",
+        sections: [
+            {
+                heading: "Function and comfort, not just appearance",
+                paragraphs: [
+                    "Cosmetic gynaecology is often misunderstood as purely aesthetic. In practice, most procedures are about restoring comfort and function that changed after childbirth, ageing, or hormonal shifts — appearance is only part of the picture.",
+                ],
+            },
+            {
+                heading: "A growing, mainstream specialty",
+                paragraphs: [
+                    "What was once rarely discussed is now a recognised part of women's healthcare, blending medical precision with a genuine focus on how a woman feels in her own body.",
+                ],
+            },
+            {
+                heading: "The AMVI approach",
+                paragraphs: [
+                    "Every consultation is private and personalised — treatment is planned around individual anatomy and goals, not a standard package.",
+                ],
+            },
+        ],
+    },
+    {
+        slug: "birthing-exercises-for-normal-delivery",
+        title: "Empower Your Body for Normal Delivery: Birthing Exercises That Help",
+        excerpt:
+            "Simple exercises during pregnancy can help prepare your body for a smoother, more confident natural delivery.",
+        category: "Maternity",
+        date: "September 13, 2026",
+        readTime: "4 min read",
+        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/fpkdl.com_960_operation-stomach-medical-procedure-treating-patient-with-surgical-intervention-operating-room_158518-20007.webp",
+        sections: [
+            {
+                heading: "Preparing the body, not just waiting for the day",
+                paragraphs: [
+                    "Pregnancy is a period of steady change, and many expecting mothers find that gentle, guided exercise helps them feel more prepared — physically and mentally — for labour and a natural delivery.",
+                ],
+            },
+            {
+                heading: "The kinds of exercises that help",
+                paragraphs: [
+                    "Pelvic floor exercises, guided breathing techniques, and gentle walking are commonly recommended through pregnancy to support labour readiness — always suited to your individual stage and health.",
+                ],
+            },
+            {
+                heading: "Get a plan suited to you",
+                paragraphs: [
+                    "What's safe and useful varies by trimester and individual health, so it's worth discussing an exercise plan directly with your doctor at AMVI Hospitals rather than following generic advice alone.",
+                ],
+            },
+        ],
+    },
+    {
+        slug: "gynaecology-diseases-and-surgery-overview",
+        title: "Gynaecology Diseases and Surgery: A Quick Overview",
+        excerpt:
+            "A woman's body goes through many changes over a reproductive lifetime — here's a basic look at the gynaecological issues we see most often.",
+        category: "Women's Health",
+        date: "September 11, 2026",
+        readTime: "4 min read",
+        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/gynaecology-diseases-and-surgery.webp",
+        sections: [
+            {
+                heading: "Common issues across a reproductive lifetime",
+                paragraphs: [
+                    "From irregular periods to fibroids and endometriosis, gynaecological issues are common at different life stages — most are very manageable once properly diagnosed.",
+                ],
+            },
+            {
+                heading: "When surgery becomes part of the picture",
+                paragraphs: [
+                    "Some conditions are managed with medication or lifestyle changes; others benefit from surgery, often through minimally invasive laparoscopic techniques that mean a much easier recovery than older surgical approaches.",
+                ],
+            },
+            {
+                heading: "Getting the right diagnosis first",
+                paragraphs: [
+                    "Whatever the symptoms, the right starting point is always a proper evaluation — AMVI Hospitals treats the full range of gynaecological conditions under one roof, from diagnosis through treatment.",
+                ],
+            },
+        ],
+    },
+    {
+        slug: "fertility-and-healthy-living-overview",
+        title: "Fertility and Healthy Living: Lifestyle Changes That Can Help",
+        excerpt:
+            "Simple, sustainable lifestyle changes can meaningfully improve fertility for many couples trying to conceive.",
+        category: "Fertility",
+        date: "September 9, 2026",
+        readTime: "4 min read",
+        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/fertility-and-healthy-living.webp",
+        sections: [
+            {
+                heading: "Lifestyle plays a real role",
+                paragraphs: [
+                    "Alongside any medical treatment, everyday habits — diet, weight, sleep, stress and substance use — all have a genuine, evidence-backed effect on fertility for both partners.",
+                ],
+            },
+            {
+                heading: "Where to start",
+                paragraphs: [
+                    "Maintaining a healthy weight, eating a balanced diet, managing stress, and cutting back on smoking or alcohol are some of the most impactful changes couples can make while trying to conceive.",
+                ],
+            },
+            {
+                heading: "Pairing lifestyle with the right guidance",
+                paragraphs: [
+                    "Lifestyle changes work best alongside a proper fertility evaluation, not instead of one — if you've been trying to conceive for a while, that's the right next step at AMVI Hospitals.",
                 ],
             },
         ],
