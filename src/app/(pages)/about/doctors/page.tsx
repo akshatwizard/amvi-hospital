@@ -4,7 +4,7 @@ import LeadProfile from "@/components/about-doctor/lead-profile";
 import Team from "@/components/about-doctor/team";
 
 export const metadata: Metadata = {
-    title: "About Our Doctors | Dr. Shaivalini Kamarapu — AMVI Hospital",
+    title: "Our Doctors | Dr. Shaivalini Kamarapu | AMVI Hospitals",
     description:
         "Meet Dr. Shaivalini Kamarapu, Hyderabad's trusted IVF specialist and gynaecologist, and the full specialist team behind AMVI Hospital's women's health, fertility and maternity care.",
     alternates: { canonical: "/about/doctors" },

@@ -27,7 +27,7 @@ export const vaginalReconRejuvenationTypes = [
         description: "Focuses on reconstructing the inner vaginal opening, most commonly through vaginoplasty, perineoplasty, or hymenoplasty procedures.",
         links: [
             { name: "Hymenoplasty", href: "/cosmetic-gynecology/hymenoplasty" },
-            { name: "Perineal Reconstruction", href: "/cosmetic-gynecology/perineal-reconstruction" },
+            { name: "Vaginal Tightening (Perineoplasty)", href: "/cosmetic-gynecology/vaginal-tightening" },
         ],
     },
     {

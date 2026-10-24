@@ -27,8 +27,8 @@ export default function ContactPage() {
                         </span>
                     </Reveal>
                     <RevealText
-                        as="h1"
-                        text="Book a consultation"
+                        as="h2"
+                        text="Request an appointment"
                         className='font-serif text-4xl md:text-5xl text-plum-ink leading-[1.1] mt-4'
                         delay={0.1}
                     />

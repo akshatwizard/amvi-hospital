@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import BlogCover from '@/components/blog/blog-cover'
 import { ArrowUpRight } from 'lucide-react'
 import { Section, Wrapper } from '@/shared/sections'
 import { StaggerContainer, StaggerItem } from '@/shared/stagger'
@@ -42,11 +42,9 @@ export default function BlogPreview() {
                         <StaggerItem key={post.slug}>
                             <Link href={`/blog/${post.slug}`} className='group flex flex-col gap-4'>
                                 <div className='relative w-full aspect-4/3 rounded-card overflow-hidden bg-rose-100'>
-                                    <Image
-                                        src={post.image}
-                                        alt={post.title}
-                                        fill
-                                        className='object-cover group-hover:scale-105 transition-transform duration-500'
+                                    <BlogCover
+                                        blog={post}
+                                        className='group-hover:scale-105 transition-transform duration-500'
                                         sizes="(max-width: 768px) 100vw, 33vw"
                                     />
                                 </div>

@@ -7,6 +7,9 @@ import DesktopNav from "@/components/layouts/desktop_nav";
 import SmoothScrollProvider from "@/providers/smooth_scroll_provider";
 import Footer from "@/components/layouts/footer";
 import { cn } from "@/lib/utils";
+import { SITE_URL, SITE_NAME } from "@/lib/site";
+import JsonLd from "@/shared/json-ld";
+import { hospitalSchema } from "@/lib/schema";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -23,8 +26,17 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "AMVI Hospitals Hyderabad | IVF, Maternity, Laparoscopy & Womens Care | Puppalaguda & Attapur",
-  description: "AMVI Hospitals, Hyderabad — IVF, IUI, Maternity, Normal & Painless Delivery, Laparoscopy, PCOS & Womens Healthcare. Expert care at Puppalaguda & Attapur. Book appointment today.",
+  // Makes every relative canonical/OG URL absolute on the www domain.
+  metadataBase: new URL(SITE_URL),
+  title: "AMVI Hospitals Hyderabad | IVF, Maternity & Women's Care",
+  description: "AMVI Hospitals, Hyderabad — IVF, IUI, maternity, normal & painless delivery, laparoscopy and PCOS care. Expert women's healthcare at Puppalaguda & Attapur.",
+  openGraph: {
+    siteName: SITE_NAME,
+    locale: "en_IN",
+    type: "website",
+    images: [{ url: "/images/hero/home-hero.png", alt: "AMVI Hospitals, Hyderabad" }],
+  },
+  twitter: { card: "summary_large_image" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -35,6 +47,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <SmoothScrollProvider>
         <body>
+          <JsonLd data={hospitalSchema} />
           <TopBar />
           <Header />
           <DesktopNav />

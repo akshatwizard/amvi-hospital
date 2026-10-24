@@ -1,5 +1,5 @@
 import PageHero from '@/shared/page-hero'
-import { Blog } from '@/constants/blogs'
+import { Blog, blogImage } from '@/constants/blogs'
 
 export default function BlogPostHero({ blog }: { blog: Blog }) {
     return (
@@ -12,7 +12,7 @@ export default function BlogPostHero({ blog }: { blog: Blog }) {
                 { label: "Blog", href: "/blog" },
                 { label: blog.title },
             ]}
-            image={blog.image}
+            image={blogImage(blog)}
             imageAlt={blog.title}
         />
     )

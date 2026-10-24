@@ -28,7 +28,7 @@ export const specialties: Specialty[] = [
         name: "Female Infertility",
         description:
             "Fertility-focused evaluation and treatment for PCOS, PCOD, low AMH, fibroids, endometriosis and menstrual irregularities — conditions that affect conception as much as everyday comfort, addressed with that dual lens in mind.",
-        href: "/infertility/female",
+        href: "/infertility", // TODO: change to "/infertility/female" once that page exists
     },
     {
         index: "05",

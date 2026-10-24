@@ -1,33 +1,48 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import { useInView, useMotionValue, useSpring, useReducedMotion } from "motion/react"
+import { animate, useInView, useReducedMotion } from "motion/react"
 
 type CounterProps = {
     value: number
     suffix?: string
 }
 
+const format = (n: number, suffix: string) => Math.round(n).toLocaleString("en-IN") + suffix
+
+// The final value is rendered on the server, so search engines, link
+// previews and visitors without JavaScript see the real figure ("20+")
+// rather than "0+". In the browser, a counter that is still below the fold
+// is reset to 0 and counts up once it scrolls into view.
 export default function Counter({ value, suffix = "" }: CounterProps) {
     const ref = useRef<HTMLSpanElement>(null)
     const inView = useInView(ref, { once: true, margin: "-10% 0px" })
     const reduced = useReducedMotion()
-    const motionValue = useMotionValue(0)
-    const spring = useSpring(motionValue, { stiffness: 60, damping: 20, mass: 1 })
+    const armed = useRef(false)
 
+    // On mount: only arm the animation if the number is not already visible.
     useEffect(() => {
-        if (inView) motionValue.set(value)
-    }, [inView, value, motionValue])
-
-    useEffect(() => {
-        if (reduced) {
-            if (ref.current) ref.current.textContent = value.toLocaleString() + suffix
-            return
+        const el = ref.current
+        if (!el || reduced) return
+        const rect = el.getBoundingClientRect()
+        const visible = rect.top < window.innerHeight && rect.bottom > 0
+        if (!visible) {
+            el.textContent = format(0, suffix)
+            armed.current = true
         }
-        return spring.on("change", (v) => {
-            if (ref.current) ref.current.textContent = Math.round(v).toLocaleString() + suffix
-        })
-    }, [spring, suffix, value, reduced])
+    }, [reduced, suffix])
 
-    return <span ref={ref}>0{suffix}</span>
+    useEffect(() => {
+        const el = ref.current
+        if (!el || !inView || !armed.current) return
+        armed.current = false
+        const controls = animate(0, value, {
+            duration: 1.6,
+            ease: [0.22, 1, 0.36, 1],
+            onUpdate: (v) => { el.textContent = format(v, suffix) },
+        })
+        return () => controls.stop()
+    }, [inView, value, suffix])
+
+    return <span ref={ref}>{format(value, suffix)}</span>
 }

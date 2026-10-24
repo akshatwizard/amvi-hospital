@@ -620,3 +620,15 @@ export const blogs: Blog[] = [
         ],
     },
 ]
+
+// Images that were hosted on the old WordPress install (/blogs/wp-content/…)
+// stopped existing when the domain moved to the new site. Until those files
+// are restored into /public/images/blog/, such posts show a branded
+// placeholder instead of a broken image.
+const LEGACY_IMAGE_HOST = "amvihospitals.com/blogs/wp-content/"
+
+export function blogImage(blog: Pick<Blog, "image">): string | undefined {
+    return blog.image && !blog.image.includes(LEGACY_IMAGE_HOST) ? blog.image : undefined
+}
+
+export const publishedBlogs = blogs.filter((blog) => blog.published)
