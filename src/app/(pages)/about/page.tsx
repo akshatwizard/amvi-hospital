@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-    title: "About AMVI Hospital | Women's Health Daycare Surgery Centre in Hyderabad",
+    title: "About AMVI Hospitals | Women's Hospital in Hyderabad",
     description:
         "AMVI Hospital is a state-of-the-art daycare surgery centre in Hyderabad dedicated to women's health — offering gynaecology, fertility, maternity and cosmetic gynaecology care across two air-conditioned operation theatres, in-house pharmacy and on-site diagnostics.",
     alternates: {

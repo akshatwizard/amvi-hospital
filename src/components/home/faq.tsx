@@ -1,7 +1,9 @@
 "use client"
 
 import { useState } from 'react'
-import { AnimatePresence, motion } from 'motion/react'
+import { motion } from 'motion/react'
+import { cn } from '@/lib/utils'
+import JsonLd, { faqPageSchema } from '@/shared/json-ld'
 import { Plus } from 'lucide-react'
 import { Section, Wrapper } from '@/shared/sections'
 import RevealText from '@/shared/reveal_text'
@@ -12,7 +14,7 @@ export default function Faq() {
     const [open, setOpen] = useState<number | null>(0)
 
     return (
-        <Section className='bg-petal-white'>
+        <Section id='faq' className='bg-petal-white scroll-mt-24'>
             <Wrapper>
                 <div className='grid md:grid-cols-[1fr_1.4fr] gap-8 md:gap-16'>
                     <div className='md:sticky md:top-20 self-start'>
@@ -36,11 +38,16 @@ export default function Faq() {
                     </div>
 
                     <div className='flex flex-col'>
+                        <JsonLd data={faqPageSchema(faqs)} />
                         {faqs.map((item, i) => {
                             const isOpen = open === i
                             return (
                                 <div key={item.question} className='border-b border-rose-100'>
                                     <button
+                                        id={`home-faq-button-${i}`}
+                                        type="button"
+                                        aria-expanded={isOpen}
+                                        aria-controls={`home-faq-panel-${i}`}
                                         onClick={() => setOpen(isOpen ? null : i)}
                                         className='w-full flex items-center justify-between gap-6 py-6 text-left'
                                     >
@@ -56,21 +63,21 @@ export default function Faq() {
                                         </motion.span>
                                     </button>
 
-                                    <AnimatePresence initial={false}>
-                                        {isOpen && (
-                                            <motion.div
-                                                initial={{ height: 0, opacity: 0 }}
-                                                animate={{ height: "auto", opacity: 1 }}
-                                                exit={{ height: 0, opacity: 0 }}
-                                                transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                                                className='overflow-hidden'
-                                            >
-                                                <p className='text-warm-slate text-sm md:text-base leading-relaxed pb-6 max-w-lg'>
-                                                    {item.answer}
-                                                </p>
-                                            </motion.div>
+                                    <div
+                                        id={`home-faq-panel-${i}`}
+                                        role="region"
+                                        aria-labelledby={`home-faq-button-${i}`}
+                                        className={cn(
+                                            'grid transition-[grid-template-rows,opacity] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]',
+                                            isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
                                         )}
-                                    </AnimatePresence>
+                                    >
+                                        <div className='overflow-hidden' inert={!isOpen}>
+                                            <p className='text-warm-slate text-sm md:text-base leading-relaxed pb-6 max-w-lg'>
+                                                {item.answer}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             )
                         })}

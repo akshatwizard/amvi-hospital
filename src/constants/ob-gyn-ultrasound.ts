@@ -17,7 +17,7 @@ export const obgynObstetricUses: string[] = [
     "Confirming the pregnancy itself",
     "Determining due dates",
     "Identifying the possible presence of twins or multiples",
-    "Learning the sex, size and position of the baby",
+    "Checking the size and position of the baby",
     "Screening for birth defects",
     "Assessing whether the baby is facing head-down toward the end of pregnancy",
 ]

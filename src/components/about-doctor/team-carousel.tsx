@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
+import DoctorPhoto from '@/components/about-doctor/doctor-photo'
 import Link from 'next/link'
 import { motion } from 'motion/react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
@@ -67,13 +67,7 @@ export default function TeamCarousel() {
                 {modalDoctor && (
                     <div className='flex flex-col pt-5'>
                         <div className='relative w-full aspect-4/3'>
-                            <Image
-                                src={modalDoctor.image}
-                                alt={modalDoctor.name}
-                                fill
-                                sizes="512px"
-                                className='object-cover object-top'
-                            />
+                            <DoctorPhoto doctor={modalDoctor} sizes="512px" />
                         </div>
                         <div className='p-6 flex flex-col gap-3'>
                             <p id="doctor-modal-title" className='font-serif text-2xl text-plum-ink'>{modalDoctor.name}</p>
@@ -118,20 +112,17 @@ function DoctorCard({ doctor, is_active, on_select, viewDoc }: Props) {
                     layout
                     transition={spring}
                     className={cn(
-                        'h-[55%] shrink-0 bg-rose-100 rounded-xl w-full overflow-hidden pt-3',
-                        is_active && "rounded-3xl bg-linear-to-t from-rose-600 to-rose-50 pt-5 h-full"
+                        'h-[55%] shrink-0 bg-rose-100 rounded-xl w-full overflow-hidden',
+                        is_active && "rounded-3xl bg-linear-to-t from-rose-600 to-rose-50 h-full"
                     )}
                 >
-                    <Image
-                        src={doctor.image}
-                        alt={doctor.name}
-                        width={500}
-                        height={500}
-                        className={cn(
-                            'w-full h-full object-contain scale-110 transition-scale duration-300 ease-in-out',
-                            is_active && "scale-115 h-full w-full"
-                        )}
-                    />
+                    <div className='relative w-full h-full'>
+                        <DoctorPhoto
+                            doctor={doctor}
+                            sizes="(max-width: 768px) 80vw, 320px"
+                            className={cn('transition-transform duration-300 ease-in-out', is_active && 'scale-105')}
+                        />
+                    </div>
                 </motion.div>
 
                 <motion.div

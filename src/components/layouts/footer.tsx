@@ -3,7 +3,14 @@ import { Phone, Mail } from 'lucide-react'
 import { Wrapper } from '@/shared/sections'
 import { specialties } from '@/constants/specialties'
 import { locations } from '@/constants/locations'
-import { FacebookIcon, InstagramIcon } from '@/shared/social_icons'
+import { FacebookIcon, InstagramIcon, YoutubeIcon } from '@/shared/social_icons'
+import { socialLinks } from '@/constants/social'
+
+const socials = [
+    { label: "Instagram", href: socialLinks.instagram, Icon: InstagramIcon },
+    { label: "Facebook", href: socialLinks.facebook, Icon: FacebookIcon },
+    { label: "YouTube", href: socialLinks.youtube, Icon: YoutubeIcon },
+].filter((s) => s.href)
 
 const quick_links = [
     { name: "About AMVI", href: "/about" },
@@ -23,22 +30,22 @@ export default function Footer() {
                             Hyderabad&apos;s trusted IVF, fertility and maternity hospital — complete,
                             personalised care for women through every stage of life.
                         </p>
-                        <div className='flex items-center gap-3 mt-2'>
-                            <a
-                                href="#"
-                                aria-label="Instagram"
-                                className='size-9 rounded-full border border-rose-800 flex items-center justify-center text-rose-100 hover:bg-rose-800 transition-colors'
-                            >
-                                <InstagramIcon size={16} />
-                            </a>
-                            <a
-                                href="#"
-                                aria-label="Facebook"
-                                className='size-9 rounded-full border border-rose-800 flex items-center justify-center text-rose-100 hover:bg-rose-800 transition-colors'
-                            >
-                                <FacebookIcon size={16} />
-                            </a>
-                        </div>
+                        {socials.length > 0 && (
+                            <div className='flex items-center gap-3 mt-2'>
+                                {socials.map(({ label, href, Icon }) => (
+                                    <a
+                                        key={label}
+                                        href={href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={label}
+                                        className='size-9 rounded-full border border-rose-800 flex items-center justify-center text-rose-100 hover:bg-rose-800 transition-colors'
+                                    >
+                                        <Icon size={16} />
+                                    </a>
+                                ))}
+                            </div>
+                        )}
                     </div>
 
                     <div className='flex flex-col gap-3'>

@@ -189,11 +189,9 @@ export const navItems: MenuItem[] = [
         href: "/patient-guide",
         description: "Everything you need before and after your visit.",
         sub_menu: [
+            { name: "Preparing for your visit", href: "/patient-guide" },
             { name: "Reviews", href: "https://www.google.com/maps/place/AMVI+Hospital", new_tab: true },
-            { name: "Videos", href: "#" },
-            { name: "Video testimonials", href: "#" },
             { name: "Blogs", href: "/blog" },
-            { name: "Image gallery", href: "/patient-guide/gallery" },
         ],
     },
     {

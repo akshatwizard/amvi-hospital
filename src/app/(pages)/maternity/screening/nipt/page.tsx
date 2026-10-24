@@ -3,7 +3,7 @@ import NiptHero from "@/components/nipt/hero";
 import NiptContent from "@/components/nipt/content";
 
 export const metadata: Metadata = {
-    title: "NIPT Test in Hyderabad | Non-Invasive Prenatal Testing | AMVI Hospitals",
+    title: "NIPT (Non-Invasive Prenatal Test) Hyderabad | AMVI Hospitals",
     description:
         "Non-invasive prenatal testing (NIPT) at AMVI Hospitals, Hyderabad — highly accurate prenatal screening for common chromosomal conditions under expert obstetric care.",
     alternates: { canonical: "/maternity/screening/nipt" },

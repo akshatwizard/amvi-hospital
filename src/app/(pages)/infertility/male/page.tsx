@@ -7,7 +7,7 @@ import MaleInfertilityTreatments from "@/components/male-infertility-hub/treatme
 import MaleInfertilityFaq from "@/components/male-infertility-hub/faq";
 
 export const metadata: Metadata = {
-    title: "Male Infertility Treatment in Hyderabad | Causes, Tests & ICSI | AMVI Hospitals",
+    title: "Male Infertility Treatment in Hyderabad | AMVI Hospitals",
     description:
         "Male infertility evaluation and treatment in Hyderabad at AMVI Hospitals — semen analysis, varicocele repair, IUI and ICSI. 40% of infertility involves a male factor. Puppalaguda & Attapur.",
     alternates: { canonical: "/infertility/male" },

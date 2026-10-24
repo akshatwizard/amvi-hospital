@@ -125,7 +125,7 @@ export const blogs: Blog[] = [
         category: "Women's Health",
         date: "September 3, 2026",
         readTime: "5 min read",
-        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/08/fitness-healthy-lifestyle-concept-female-is-resting-eating-healthy-oatmeal-after-workout-top-view-1024x641.jpg",
+        image: "/images/blog/endometriosis-diet-for-fertility.webp",
         published: true,
         sections: [
             {
@@ -168,7 +168,7 @@ export const blogs: Blog[] = [
         category: "Cosmetic Gynecology",
         date: "August 29, 2026",
         readTime: "5 min read",
-        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/WhatsApp-Image-2025-06-20-at-3.00.42-PM-1024x682.jpeg",
+        image: "/images/blog/what-is-monsplasty.webp",
         published: true,
         sections: [
             {
@@ -211,7 +211,7 @@ export const blogs: Blog[] = [
         category: "Cosmetic Gynecology",
         date: "August 24, 2026",
         readTime: "5 min read",
-        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/fpkdl.com_960_side-view-doctor-holding-anatomic-model_23-2149351653.jpg",
+        image: "/images/blog/vaginoplasty-comfort-and-confidence.webp",
         published: true,
         sections: [
             {
@@ -254,7 +254,7 @@ export const blogs: Blog[] = [
         category: "Cosmetic Gynecology",
         date: "August 19, 2026",
         readTime: "6 min read",
-        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/09/gynecologist-talking-with-young-female-patient-medical-consultation-modern-clinic-patient-with-gynecologist-consultation-gynecological-office-1024x683.jpg",
+        image: "/images/blog/o-shot-and-g-shot-intimate-wellness.webp",
         published: true,
         sections: [
             {
@@ -298,7 +298,7 @@ export const blogs: Blog[] = [
         category: "Cosmetic Gynecology",
         date: "August 14, 2026",
         readTime: "5 min read",
-        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/07/doctor-explaining-anatomic-model-patient-1024x683.jpg",
+        image: "/images/blog/cosmetic-gynecology-redefining-intimate-wellness.webp",
         published: true,
         sections: [
             {
@@ -384,7 +384,7 @@ export const blogs: Blog[] = [
         category: "Maternity",
         date: "August 4, 2026",
         readTime: "5 min read",
-        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/freepicdownloader.com-uterus-doctor-with-anatomy-model-study-diagnosis-treatment-hospital-large-1.webp",
+        image: "/images/blog/episiotomy-procedure-recovery-care.webp",
         published: true,
         sections: [
             {
@@ -472,7 +472,7 @@ export const blogs: Blog[] = [
         category: "Maternity",
         date: "September 15, 2026",
         readTime: "4 min read",
-        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/07/97233.jpg",
+        image: "/images/blog/vaginal-delivery-natural-birth-guide.webp",
         published: true,
         sections: [
             {
@@ -503,7 +503,7 @@ export const blogs: Blog[] = [
         category: "Cosmetic Gynecology",
         date: "September 14, 2026",
         readTime: "4 min read",
-        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/07/Cosmetic-Gynaecology-with-Restoring-Confidence-Comfort-and-Intimate-Wellness-1024x1024.webp",
+        image: "/images/blog/cosmetic-gynaecology-confidence-comfort-wellness.webp",
         published: true,
         sections: [
             {
@@ -534,7 +534,7 @@ export const blogs: Blog[] = [
         category: "Maternity",
         date: "September 13, 2026",
         readTime: "4 min read",
-        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/fpkdl.com_960_operation-stomach-medical-procedure-treating-patient-with-surgical-intervention-operating-room_158518-20007.webp",
+        image: "/images/blog/birthing-exercises-for-normal-delivery.webp",
         published: true,
         sections: [
             {
@@ -565,7 +565,7 @@ export const blogs: Blog[] = [
         category: "Women's Health",
         date: "September 11, 2026",
         readTime: "4 min read",
-        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/gynaecology-diseases-and-surgery.webp",
+        image: "/images/blog/gynaecology-diseases-and-surgery-overview.webp",
         published: true,
         sections: [
             {
@@ -596,7 +596,7 @@ export const blogs: Blog[] = [
         category: "Fertility",
         date: "September 9, 2026",
         readTime: "4 min read",
-        image: "https://amvihospitals.com/blogs/wp-content/uploads/2025/06/fertility-and-healthy-living.webp",
+        image: "/images/blog/fertility-and-healthy-living-overview.webp",
         published: true,
         sections: [
             {
@@ -620,3 +620,15 @@ export const blogs: Blog[] = [
         ],
     },
 ]
+
+// Images that were hosted on the old WordPress install (/blogs/wp-content/…)
+// stopped existing when the domain moved to the new site. Until those files
+// are restored into /public/images/blog/, such posts show a branded
+// placeholder instead of a broken image.
+const LEGACY_IMAGE_HOST = "amvihospitals.com/blogs/wp-content/"
+
+export function blogImage(blog: Pick<Blog, "image">): string | undefined {
+    return blog.image && !blog.image.includes(LEGACY_IMAGE_HOST) ? blog.image : undefined
+}
+
+export const publishedBlogs = blogs.filter((blog) => blog.published)

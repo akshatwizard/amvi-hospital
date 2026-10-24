@@ -21,7 +21,6 @@ export const ultrasoundReasons: string[] = [
     "Measuring the size of your baby",
     "Checking amniotic fluid levels",
     "Ruling out certain birth defects",
-    "Determining baby's sex",
     "Giving parents a look at baby and reassurance that all is going as it should",
 ]
 

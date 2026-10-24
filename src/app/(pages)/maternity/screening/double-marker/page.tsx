@@ -3,7 +3,7 @@ import DoubleMarkerHero from "@/components/double-marker/hero"
 import DoubleMarkerContent from "@/components/double-marker/content"
 
 export const metadata: Metadata = {
-    title: "Double Marker Test in Hyderabad | Early Pregnancy Screening | AMVI Hospitals",
+    title: "Double Marker Test in Hyderabad | AMVI Hospitals",
     description:
         "Double Marker Test at AMVI Hospitals, Hyderabad — first-trimester prenatal screening for chromosomal abnormalities including Down syndrome and Edwards syndrome.",
     alternates: {

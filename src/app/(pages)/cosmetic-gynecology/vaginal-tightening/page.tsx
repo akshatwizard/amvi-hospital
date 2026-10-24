@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: "Vaginal Tightening Surgery in Hyderabad | AMVI Hospitals",
     description:
         "Vaginal tightening (vaginoplasty) at AMVI Hospitals, Hyderabad — surgical or laser treatment to restore vaginal tone and improve sexual and urinary function.",
-    alternates: { canonical: "/cosmetic-gynecology/vaginal-tightening-surgery" },
+    alternates: { canonical: "/cosmetic-gynecology/vaginal-tightening" },
 };
 
 export default function VaginalTighteningPage() {

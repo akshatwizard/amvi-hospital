@@ -4,6 +4,7 @@ import { Check } from 'lucide-react'
 import { Section, Wrapper } from '@/shared/sections'
 import { StaggerContainer, StaggerItem } from '@/shared/stagger'
 import RevealText from '@/shared/reveal_text'
+import PcpndtNotice from '@/shared/pcpndt-notice'
 import Reveal from '@/shared/reveal'
 import Counter from '@/shared/counter'
 import ConditionSidebar from '@/shared/condition-sidebar'
@@ -79,6 +80,7 @@ export default function ObGynUltrasoundContent() {
                                 </StaggerItem>
                             ))}
                         </StaggerContainer>
+                        <PcpndtNotice />
                     </div>
 
                     {/* Gynecologic uses */}

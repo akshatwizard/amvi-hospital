@@ -3,17 +3,17 @@ import ContactPage from '@/components/contact/contact_page'
 import PageHero from '@/shared/page-hero'
 
 export const metadata: Metadata = {
-    title: "Contact Us | AMVI Hospital",
+    title: "Contact Us & Book Appointment | AMVI Hospitals",
     description: "Reach AMVI Hospital's Puppalaguda and Attapur branches for gynaecology, fertility and maternity care. Book a consultation or call us directly.",
     openGraph: {
-        title: "Contact Us | AMVI Hospital",
+        title: "Contact Us & Book Appointment | AMVI Hospitals",
         description: "Reach AMVI Hospital's Puppalaguda and Attapur branches for gynaecology, fertility and maternity care. Book a consultation or call us directly.",
-        url: "https://amvihospitals.com/contact",
-        siteName: "AMVI Hospital",
+        url: "/contact",
+        siteName: "AMVI Hospitals",
         type: "website",
     },
     alternates: {
-        canonical: "https://amvihospitals.com/contact",
+        canonical: "/contact",
     },
 }
 

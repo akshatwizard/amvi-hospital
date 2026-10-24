@@ -46,7 +46,7 @@ export default function LeadProfile() {
                             </span>
                         </Reveal>
                         <RevealText
-                            as="h1"
+                            as="h2"
                             text={leadDoctor.name}
                             className='font-serif text-3xl md:text-4xl text-plum-ink mt-4'
                             delay={0.1}

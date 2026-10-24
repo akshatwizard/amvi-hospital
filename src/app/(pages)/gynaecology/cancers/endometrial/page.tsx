@@ -3,7 +3,7 @@ import EndometrialCancerHero from "@/components/endometrial-cancer/hero";
 import EndometrialCancerContent from "@/components/endometrial-cancer/content";
 
 export const metadata: Metadata = {
-    title: "Endometrial Cancer Care | Diagnosis, Treatment & Advanced Uterine Therapy | AMVI Hospitals",
+    title: "Endometrial Cancer Treatment in Hyderabad | AMVI Hospitals",
     description:
         "Advanced care for endometrial (uterine) cancer at AMVI Hospitals, Hyderabad — symptoms, risk factors, diagnosis and treatment from expert gynecologic oncologists.",
     alternates: { canonical: "/gynaecology/cancers/endometrial" },

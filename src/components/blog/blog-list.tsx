@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image"
+import BlogCover from "@/components/blog/blog-cover"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import { motion } from "motion/react"
@@ -62,11 +62,9 @@ export default function BlogList() {
 
                                         {/* Image */}
                                         <div className="relative aspect-16/10 overflow-hidden bg-rose-50">
-                                            <Image
-                                                src={blog.image}
-                                                alt={blog.title}
-                                                fill
-                                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                            <BlogCover
+                                                blog={blog}
+                                                className="transition-transform duration-500 group-hover:scale-105"
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                             />
 
