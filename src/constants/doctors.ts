@@ -33,6 +33,7 @@ export const leadDoctor: LeadDoctor = {
 export const doctors: Doctor[] = [
     {
         id: "dr-gita-krishna",
+        speciality: "radiology",
         name: "Dr. P Gita Krishna",
         designation: "MBBS, MDRD — Consultant Radiologist",
         experience: "12+",
@@ -41,6 +42,7 @@ export const doctors: Doctor[] = [
     },
     {
         id: "dr-ganesh",
+        speciality: "paediatrics",
         name: "Dr. Ganesh",
         designation: "MBBS, MD (Paediatrics), DCH — Senior Consultant Paediatrician",
         experience: "25+",
@@ -48,6 +50,7 @@ export const doctors: Doctor[] = [
     },
     {
         id: "dr-sumanth",
+        speciality: "internal-medicine",
         name: "Dr. Sumanth",
         designation: "MD — Internal Medicine",
         experience: "12+",
@@ -55,6 +58,7 @@ export const doctors: Doctor[] = [
     },
     {
         id: "dr-mohana-nandigam",
+        speciality: "psychology",
         name: "Dr. Mohana Nandigam",
         designation: "Clinical Psychologist",
         experience: "12+",
@@ -63,6 +67,7 @@ export const doctors: Doctor[] = [
     },
     {
         id: "sharanya-kamaraju",
+        speciality: "genetics",
         name: "Sharanya Kamaraju",
         designation: "MSc, PG Diploma in Genetic Counselling — Senior Genetic Counsellor",
         experience: "3+",
@@ -70,6 +75,7 @@ export const doctors: Doctor[] = [
     },
     {
         id: "dr-s-manish",
+        speciality: "embryology",
         name: "Dr. S. Manish",
         designation: "Junior Embryologist",
         experience: "1+",
@@ -77,6 +83,7 @@ export const doctors: Doctor[] = [
     },
     {
         id: "dr-divya",
+        speciality: "anaesthesia",
         name: "Dr. Divya",
         designation: "Senior Anesthetist",
         experience: "10+",
@@ -85,6 +92,7 @@ export const doctors: Doctor[] = [
     },
     {
         id: "dr-sushmitha",
+        speciality: "gynaecology",
         name: "Dr. Sushmitha",
         designation: "MBBS, DNB (OBG), Fellowship in Reproductive Medicine — Obstetrics & Gynaecology",
         experience: "3+",
@@ -93,6 +101,7 @@ export const doctors: Doctor[] = [
     },
     {
         id: "dr-jampani-ravitheja",
+        speciality: "orthopaedics",
         name: "Dr. Jampani Ravitheja",
         designation: "Consultant Orthopedic Surgeon",
         experience: "8+",
@@ -101,6 +110,7 @@ export const doctors: Doctor[] = [
     },
     {
         id: "dr-gayathri",
+        speciality: "fertility",
         name: "Dr. Gayathri",
         designation: "Infertility Specialist",
         experience: "10+",
@@ -108,6 +118,7 @@ export const doctors: Doctor[] = [
     },
     {
         id: "dr-rajyalakshmi",
+        speciality: "general-medicine",
         name: "Dr. Rajyalakshmi",
         designation: "MBBS, MD (General Medicine) — Consultant Physician",
         experience: "8+",
@@ -115,6 +126,7 @@ export const doctors: Doctor[] = [
     },
     {
         id: "dr-priyanka-reddy",
+        speciality: "gynaecology",
         name: "Dr. Priyanka Reddy",
         designation: "MBBS, MS (OBG), ICOG Fellowship — Obstetrician, Gynaecologist & Infertility Specialist",
         experience: "10+",
