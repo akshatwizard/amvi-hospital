@@ -7,6 +7,7 @@ export interface Doctor {
     bio: string
 }
 
+
 export interface LeadDoctor extends Doctor {
     tagline: string
     achievements: string[]
