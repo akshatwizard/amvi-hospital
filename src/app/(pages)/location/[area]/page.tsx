@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import PageHero from "@/shared/page-hero";
 import LocationAreaContent from "@/components/location-area/content";
 import { locationAreas } from "@/constants/location-areas";
-
+const DEFAULT_HERO_IMAGE = "/images/hero/laparoscopic-hysterectomy-hero.png"
 type Props = {
     params: Promise<{ area: string }>;
 };
@@ -41,6 +41,9 @@ export default async function LocationAreaPage({ params }: Props) {
                     { label: area.name },
                 ]}
                 cta={{ label: "Book a consultation", href: "/contact" }}
+                image={area.image ?? DEFAULT_HERO_IMAGE}
+                imageAlt={`AMVI Hospitals care for patients in ${area.name}, Hyderabad`}
+            
             />
             <LocationAreaContent area={area} />
         </main>

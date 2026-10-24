@@ -212,6 +212,14 @@ export const navItems: MenuItem[] = [
             {
                 title: "Areas we serve",
                 items: [
+                    { name: "Langar Houz", href: "/location/langar-houz" },
+                    { name: "Bandlaguda", href: "/location/bandlaguda" },
+                    { name: "Manchi Revula", href: "/location/manchi-revula" },
+                    { name: "Kismatpur", href: "/location/kismatpur" },
+                    { name: "Neknampur", href: "/location/neknampur" },
+                    { name: "Golconda", href: "/location/golconda" },
+                    { name: "Shamshabad", href: "/location/shamshabad" },
+                    { name: "Vattinagulapalle", href: "/location/vattinagulapalle" },
                     { name: "Financial District", href: "/location/financial-district" },
                     { name: "Gachibowli", href: "/location/gachibowli" },
                     { name: "Kokapet", href: "/location/kokapet" },
