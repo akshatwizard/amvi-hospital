@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { SITE_URL, SITE_NAME } from "@/lib/site";
 import JsonLd from "@/shared/json-ld";
 import { hospitalSchema } from "@/lib/schema";
+import GoogleAnalytics from "@/components/analytics/google-analytics";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <DesktopNav />
           {children}
           <Footer />
+          <GoogleAnalytics />
         </body>
       </SmoothScrollProvider>
     </html>
