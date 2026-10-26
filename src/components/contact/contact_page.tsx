@@ -1,20 +1,103 @@
 "use client"
 
 import { useState } from 'react'
-import { MapPin, Phone, Mail, MessageCircle } from 'lucide-react'
+import { MapPin, Phone, Mail, MessageCircle, CheckCircle2, AlertCircle} from 'lucide-react'
 import { Section, Wrapper } from '@/shared/sections'
 import RevealText from '@/shared/reveal_text'
 import Reveal from '@/shared/reveal'
 import { locations } from '@/constants/locations'
 import { contact_services } from '@/constants/contact_services'
+import {
+    validateContact,
+    contactFields,
+    type ContactField,
+    type ContactFormInput,
+    type FieldErrors,
+} from '../../lib/contact_validation'
+
+const initialForm: ContactFormInput = { name: "", phone: "", service: "", message: "" }
+
+const baseField =
+    'bg-rose-50/60 border rounded-lg px-4 py-3 text-sm text-plum-ink outline-none transition-colors'
+const okField = 'border-rose-100 focus:border-rose-400'
+const badField = 'border-red-400 focus:border-red-500'
 
 export default function ContactPage() {
-    const [form, setForm] = useState({ name: "", phone: "", service: "", message: "" })
+    const [form, setForm] = useState<ContactFormInput>(initialForm)
+    const [touched, setTouched] = useState<Partial<Record<ContactField, boolean>>>({})
+    const [serverErrors, setServerErrors] = useState<FieldErrors>({})
+    const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+    const result = validateContact(form)
+    const clientErrors: FieldErrors = result.success ? {} : result.errors
+    const errors: FieldErrors = { ...serverErrors, ...clientErrors }
+    const errorFor = (f: ContactField) => (touched[f] ? errors[f] : undefined)
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const update = (field: ContactField, value: string) => {
+        setForm((prev) => ({ ...prev, [field]: value }))
+        setServerErrors((prev) => ({ ...prev, [field]: undefined }))
+        if (status === 'success' || status === 'error') setStatus('idle')
+    }
+
+    const blur = (field: ContactField) => setTouched((prev) => ({ ...prev, [field]: true }))
+
+    const fieldProps = (field: ContactField) => {
+        const error = errorFor(field)
+        return {
+            id: field,
+            name: field,
+            value: form[field],
+            onBlur: () => blur(field),
+            'aria-invalid': !!error,
+            'aria-describedby': error ? `${field}-error` : undefined,
+            className: `${baseField} ${error ? badField : okField}`,
+        }
+    }
+
+    const renderError = (field: ContactField) => {
+        const error = errorFor(field)
+        if (!error) return null
+        return (
+            <p id={`${field}-error`} role="alert" className='text-xs text-red-600'>
+                {error}
+            </p>
+        )
+    }
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-        // TODO: wire this up to an actual submission endpoint (email service / API route)
-        console.log(form)
+        if (status === 'loading') return
+        setTouched({ name: true, phone: true, service: true, message: true })
+
+        if (!result.success) {
+            const firstInvalid = contactFields.find((f) => clientErrors[f])
+            if (firstInvalid) document.getElementById(firstInvalid)?.focus()
+            return
+        }
+
+        setStatus('loading')
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(result.data), // trimmed + normalized values
+            })
+
+            if (res.status === 422) {
+                const data = await res.json()
+                setServerErrors(data.fieldErrors ?? {})
+                setStatus('idle')
+                return
+            }
+
+            if (!res.ok) throw new Error('Request failed')
+
+            setStatus('success')
+            setForm(initialForm)
+            setTouched({})
+            setServerErrors({})
+        } catch {
+            setStatus('error')
+        }
     }
 
     return (
@@ -42,67 +125,109 @@ export default function ContactPage() {
 
                 <div className='grid lg:grid-cols-[1.2fr_1fr] gap-12 md:gap-16'>
                     <Reveal delay={0.2}>
-                        <form onSubmit={handleSubmit} className='flex flex-col gap-5'>
+                        <form onSubmit={handleSubmit} noValidate className='flex flex-col gap-5'>
                             <div className='flex flex-col gap-1.5'>
                                 <label htmlFor="name" className='text-xs text-warm-slate'>Name</label>
                                 <input
-                                    id="name"
+                                    {...fieldProps('name')}
                                     type="text"
-                                    required
-                                    value={form.name}
-                                    onChange={(e) => setForm({ ...form, name: e.target.value })}
-                                    className='bg-rose-50/60 border border-rose-100 rounded-lg px-4 py-3 text-sm text-plum-ink outline-none focus:border-rose-400 transition-colors'
+                                    autoComplete="name"
+                                    maxLength={100}
+                                    onChange={(e) => update('name', e.target.value)}
                                     placeholder="Your full name"
                                 />
+                                {renderError('name')}
                             </div>
 
                             <div className='flex flex-col gap-1.5'>
                                 <label htmlFor="phone" className='text-xs text-warm-slate'>Phone number</label>
                                 <input
-                                    id="phone"
+                                    {...fieldProps('phone')}
                                     type="tel"
-                                    required
-                                    value={form.phone}
-                                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                                    className='bg-rose-50/60 border border-rose-100 rounded-lg px-4 py-3 text-sm text-plum-ink outline-none focus:border-rose-400 transition-colors'
+                                    inputMode="tel"
+                                    autoComplete="tel"
+                                    maxLength={20}
+                                    onChange={(e) => update('phone', e.target.value.replace(/[^\d+\s-]/g, ''))}
                                     placeholder="+91 00000 00000"
                                 />
+                                {renderError('phone')}
                             </div>
 
                             <div className='flex flex-col gap-1.5'>
                                 <label htmlFor="service" className='text-xs text-warm-slate'>Service</label>
                                 <select
-                                    id="service"
-                                    required
-                                    value={form.service}
-                                    onChange={(e) => setForm({ ...form, service: e.target.value })}
-                                    className='bg-rose-50/60 border border-rose-100 rounded-lg px-4 py-3 text-sm text-plum-ink outline-none focus:border-rose-400 transition-colors'
+                                    {...fieldProps('service')}
+                                    onChange={(e) => update('service', e.target.value)}
                                 >
                                     <option value="" disabled>Select a service</option>
                                     {contact_services.map((s) => (
                                         <option key={s} value={s}>{s}</option>
                                     ))}
                                 </select>
+                                {renderError('service')}
                             </div>
 
                             <div className='flex flex-col gap-1.5'>
-                                <label htmlFor="message" className='text-xs text-warm-slate'>Message</label>
+                                <div className='flex items-center justify-between'>
+                                    <label htmlFor="message" className='text-xs text-warm-slate'>
+                                        Message <span className='text-warm-slate/60'>(optional)</span>
+                                    </label>
+                                    <span className={`text-xs ${form.message.length > 1000 ? 'text-red-600' : 'text-warm-slate/60'}`}>
+                                        {form.message.length}/1000
+                                    </span>
+                                </div>
                                 <textarea
-                                    id="message"
+                                    {...fieldProps('message')}
                                     rows={4}
-                                    value={form.message}
-                                    onChange={(e) => setForm({ ...form, message: e.target.value })}
-                                    className='bg-rose-50/60 border border-rose-100 rounded-lg px-4 py-3 text-sm text-plum-ink outline-none focus:border-rose-400 transition-colors resize-none'
+                                    onChange={(e) => update('message', e.target.value)}
+                                    className={`${fieldProps('message').className} resize-none`}
                                     placeholder="Tell us a little about what you're looking for"
                                 />
+                                {renderError('message')}
                             </div>
 
                             <button
                                 type="submit"
-                                className='inline-flex items-center justify-center rounded-full bg-rose-700 hover:bg-rose-800 text-petal-white text-sm px-6 py-3.5 transition-colors mt-2'
+                                disabled={status === 'loading'}
+                                className='inline-flex items-center justify-center rounded-full bg-rose-700 hover:bg-rose-800 disabled:opacity-60 disabled:cursor-not-allowed text-petal-white text-sm px-6 py-3.5 transition-colors mt-2 cursor-pointer'
                             >
-                                Submit
+                                {status === 'loading' ? 'Sending...' : 'Submit'}
                             </button>
+
+                            {status === 'success' && (
+                                    <div
+                                        role="status"
+                                        className='flex items-start gap-3 rounded-xl border border-sage-500/30 bg-sage-500/10 p-4 md:p-5'
+                                    >
+                                        <CheckCircle2 size={22} className='text-sage-600 shrink-0 mt-0.5' />
+                                        <div className='flex flex-col gap-1'>
+                                            <p className='text-sm font-medium text-plum-ink'>
+                                                Thank you! Your request has been submitted successfully.
+                                            </p>
+                                            <p className='text-sm text-warm-slate leading-relaxed'>
+                                                Our team will contact you shortly on the phone number you provided to confirm
+                                                your consultation. For anything urgent, you can also call us or chat on WhatsApp.
+                                            </p>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {status === 'error' && (
+                                    <div
+                                        role="alert"
+                                        className='flex items-start gap-3 rounded-xl border border-rose-200 bg-rose-50 p-4 md:p-5'
+                                    >
+                                        <AlertCircle size={22} className='text-rose-700 shrink-0 mt-0.5' />
+                                        <div className='flex flex-col gap-1'>
+                                            <p className='text-sm font-medium text-plum-ink'>
+                                                We couldn't send your request.
+                                            </p>
+                                            <p className='text-sm text-warm-slate leading-relaxed'>
+                                                Please try again in a moment, or reach us directly by phone or WhatsApp.
+                                            </p>
+                                        </div>
+                                    </div>
+                                )}
                         </form>
                     </Reveal>
 

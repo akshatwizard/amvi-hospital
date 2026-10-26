@@ -14,6 +14,7 @@ export interface Doctor {
     speciality?: DoctorSpeciality
 }
 
+
 export interface LeadDoctor extends Doctor {
     image: string
     tagline: string

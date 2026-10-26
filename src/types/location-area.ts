@@ -1,5 +1,6 @@
 export interface LocationArea {
-    slug: string
+    slug: string,
+    image?: string     
     name: string
     nearestBranch: "Puppalaguda" | "Attapur"
     intro: string
