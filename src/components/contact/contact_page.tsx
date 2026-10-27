@@ -7,6 +7,7 @@ import RevealText from '@/shared/reveal_text'
 import Reveal from '@/shared/reveal'
 import { locations } from '@/constants/locations'
 import { contact_services } from '@/constants/contact_services'
+
 import {
     validateContact,
     contactFields,
