@@ -1,14 +1,8 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { validateContact } from '../../../lib/contact_validation'
+import { buildEnquiryEmail, sanitizeContext } from '../../../lib/enquiry_email'
 const resend = new Resend(process.env.RESEND_API_KEY)
-const escapeHtml = (str: string) =>
-    str
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;')
 
 export async function POST(req: Request) {
     let body: unknown
@@ -25,34 +19,20 @@ export async function POST(req: Request) {
         )
     }
 
-    const { name, phone, service, message } = result.data
-    const safe = {
-        name: escapeHtml(name),
-        phone: escapeHtml(phone),
-        service: escapeHtml(service),
-        message: escapeHtml(message),
-    }
+    // Which page the request came from (sent by the form; optional, cleaned before use).
+    const context = sanitizeContext((body as { context?: unknown }).context)
+    const email = buildEnquiryEmail(result.data, context)
 
     try {
         const { error } = await resend.emails.send({
             from: process.env.CONTACT_FROM_EMAIL!,
             to: (process.env.CONTACT_TO_EMAIL ?? '')
-            .split(',')
-            .map((email) => email.trim())
-            .filter(Boolean),
-            subject: `New consultation request: ${service} (${name.replace(/[\r\n]/g, ' ')})`,
-            html: `
-                <div style="font-family: Arial, sans-serif; max-width: 520px;">
-                    <h2 style="margin-bottom: 16px;">New consultation request</h2>
-                    <table cellpadding="6" style="border-collapse: collapse;">
-                        <tr><td><strong>Name</strong></td><td>${safe.name}</td></tr>
-                        <tr><td><strong>Phone</strong></td><td>${safe.phone}</td></tr>
-                        <tr><td><strong>Service</strong></td><td>${safe.service}</td></tr>
-                        <tr><td valign="top"><strong>Message</strong></td><td>${safe.message || '—'}</td></tr>
-                    </table>
-                </div>
-            `,
-            text: `Name: ${name}\nPhone: ${phone}\nService: ${service}\nMessage: ${message || '-'}`,
+                .split(',')
+                .map((address) => address.trim())
+                .filter(Boolean),
+            subject: email.subject,
+            html: email.html,
+            text: email.text,
         })
 
         if (error) {

@@ -11,6 +11,8 @@ import { SITE_URL, SITE_NAME } from "@/lib/site";
 import JsonLd from "@/shared/json-ld";
 import { hospitalSchema } from "@/lib/schema";
 import GoogleAnalytics from "@/components/analytics/google-analytics";
+import VisitTracker from "@/components/analytics/visit-tracker";
+import WhatsAppButton from "@/components/layouts/whatsapp-button";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -54,7 +56,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <DesktopNav />
           {children}
           <Footer />
+          <WhatsAppButton />
           <GoogleAnalytics />
+          <VisitTracker />
         </body>
       </SmoothScrollProvider>
     </html>

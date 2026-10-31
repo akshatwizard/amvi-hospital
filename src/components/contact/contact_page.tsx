@@ -7,6 +7,7 @@ import RevealText from '@/shared/reveal_text'
 import Reveal from '@/shared/reveal'
 import { locations } from '@/constants/locations'
 import { contact_services } from '@/constants/contact_services'
+import { getVisitContext } from '@/components/analytics/visit-tracker'
 
 import {
     validateContact,
@@ -80,7 +81,8 @@ export default function ContactPage() {
             const res = await fetch('/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(result.data), // trimmed + normalized values
+                // trimmed + normalized values, plus which page the visitor came from (for the email)
+                body: JSON.stringify({ ...result.data, context: getVisitContext() }),
             })
 
             if (res.status === 422) {
@@ -93,6 +95,13 @@ export default function ContactPage() {
             if (!res.ok) throw new Error('Request failed')
 
             setStatus('success')
+            // Lets Google Analytics count enquiries (mark "generate_lead" as a key event in GA).
+            const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag
+            gtag?.('event', 'generate_lead', {
+                form_name: 'appointment',
+                service: result.data.service,
+                from_page: getVisitContext().fromPath ?? '/contact',
+            })
             setForm(initialForm)
             setTouched({})
             setServerErrors({})
