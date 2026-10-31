@@ -60,7 +60,7 @@ export default function Modal({ open, onClose, children, labelledBy }: ModalProp
                         <button
                             onClick={onClose}
                             aria-label="Close"
-                            className='absolute top-4 right-4 text-plum-ink hover:text-rose-700 transition-colors z-10'
+                            className='absolute top-3 right-3 z-10 size-9 rounded-full bg-petal-white/95 shadow-soft flex items-center justify-center text-plum-ink hover:text-rose-700 transition-colors'
                         >
                             <X size={20} />
                         </button>
