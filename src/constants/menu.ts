@@ -9,6 +9,7 @@ export const navItems: MenuItem[] = [
         sub_menu: [
             { name: "About AMVI Hospital", href: "/about" },
             { name: "About Our Doctors", href: "/about/doctors" },
+            { name: "Certificates & Awards", href: "/certificates" },
             { name: "Contact Us", href: "/contact" },
         ],
     },
@@ -203,8 +204,8 @@ export const navItems: MenuItem[] = [
             {
                 title: "Our centers",
                 items: [
-                    { name: "Puppalaguda", href: "https://maps.app.goo.gl/idVUn4EYhZhMaZit8", new_tab: true },
-                    { name: "Attapur", href: "https://maps.app.goo.gl/ec82moWPtnCExwjh8", new_tab: true },
+                    { name: "Puppalaguda", href: "/location/puppalaguda" },
+                    { name: "Attapur", href: "/location/attapur" },
                 ],
             },
             {

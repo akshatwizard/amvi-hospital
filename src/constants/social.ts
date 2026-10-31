@@ -1,8 +1,14 @@
-// Paste each official profile URL between the quotes, e.g.
-// instagram: "https://www.instagram.com/amvihospital/"
-// An icon only appears in the footer once its URL is filled in.
+// Official profiles, taken from the hospital's previous website.
+// An icon only appears in the footer when its URL is filled in.
 export const socialLinks = {
-    instagram: "",
-    facebook: "",
+    facebook: "https://www.facebook.com/amvihospital",
+    instagram: "https://www.instagram.com/dr_shaivalini_official/",
+    instagramTelugu: "https://www.instagram.com/dr_shaivalini_telugu/",
     youtube: "",
 }
+
+// Google Business Profile of each branch (used for "Read our Google reviews").
+export const googleReviewLinks = [
+    { branch: "Puppalaguda", href: "https://maps.app.goo.gl/idVUn4EYhZhMaZit8" },
+    { branch: "Attapur", href: "https://maps.app.goo.gl/ec82moWPtnCExwjh8" },
+]

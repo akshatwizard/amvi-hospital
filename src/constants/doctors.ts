@@ -38,7 +38,7 @@ export const doctors: Doctor[] = [
         designation: "MBBS, MDRD — Consultant Radiologist",
         experience: "12+",
         image: "/images/doctor/dr-gita-krishna.webp",
-        bio: "A senior interventional radiologist specialising in Doppler scans in pregnancy, growth scans, TIFFA and anomaly scans, and 3D/4D ultrasound — regarded as one of Hyderabad's leading radiologists for prenatal imaging.",
+        bio: "A senior interventional radiologist with more than 12 years of experience and specialised training in all aspects of diagnostic tests and interventional radiology procedures. Her services include Doppler scans in pregnancy, growth scans, AFI and TVS scans, fetal Doppler, trimester and internal growth scans, NT and anomaly scans, TIFFA scans, breast scans, abdominal and pelvic scans, follicular scans and 3D/4D ultrasound.",
     },
     {
         id: "dr-ganesh",
@@ -46,7 +46,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Ganesh",
         designation: "MBBS, MD (Paediatrics), DCH — Senior Consultant Paediatrician",
         experience: "25+",
-        bio: "A senior consultant paediatrician with expertise in infant growth and development, newborn care, vaccination and behavioural disorders, including handling extreme preterm and preterm babies.",
+        bio: "A senior consultant paediatrician with more than 25 years of experience. He graduated from Kakatiya Medical College and completed his DCH and MD at Gandhi Medical College, Hyderabad. His expertise covers infant growth and development, nutrition counselling, newborn care, paediatric infections, vaccination and behavioural disorders, and he is highly experienced in caring for preterm and extremely preterm babies and performing therapeutic interventions.",
     },
     {
         id: "dr-sumanth",
@@ -54,7 +54,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Sumanth",
         designation: "MD — Internal Medicine",
         experience: "12+",
-        bio: "A patient-centred internal medicine physician focused on managing chronic conditions like diabetes, hypertension and heart disease, alongside acute illness and preventive care.",
+        bio: "An internal medicine physician with 12 years of experience in diagnosing and managing a wide range of medical conditions. Known for his patient-centred approach, he takes time to listen, explain diagnoses and discuss personalised treatment options. His practice focuses on chronic diseases such as diabetes, hypertension and heart disease, as well as acute illness and preventive healthcare.",
     },
     {
         id: "dr-mohana-nandigam",
@@ -63,7 +63,7 @@ export const doctors: Doctor[] = [
         designation: "Clinical Psychologist",
         experience: "12+",
         image: "/images/doctor/dr-mohana-nandigam.webp",
-        bio: "Specialises in anxiety, depression and trauma through evidence-based approaches including cognitive-behavioural therapy, with comprehensive support spanning outpatient care to advanced treatments.",
+        bio: "A clinical psychologist with 12 years of practice in understanding mental processes and behaviour. She helps people manage emotional, psychological and behavioural challenges through evidence-based approaches such as cognitive behavioural therapy, with expertise in anxiety, depression and trauma, and focuses on accurate assessment and personalised treatment plans.",
     },
     {
         id: "sharanya-kamaraju",
@@ -71,7 +71,7 @@ export const doctors: Doctor[] = [
         name: "Sharanya Kamaraju",
         designation: "MSc, PG Diploma in Genetic Counselling — Senior Genetic Counsellor",
         experience: "3+",
-        bio: "A certified genetic counselor specialising in reproductive genetics, prenatal counseling, and paediatric neurogenetics and oncology, supporting families navigating complex genetic conditions.",
+        bio: "A senior genetic counsellor with an MSc in Neural and Cognitive Sciences and a Postgraduate Diploma in Genetic Counselling. She is certified by the Healthcare Sector Skill Council (HSSC) and as a Level II Genetic Counsellor by the Board of Genetic Counseling India (BGCI). With more than 3 years of practice, she specialises in reproductive genetics, prenatal counselling, and paediatric neurogenetics and oncology, supporting individuals and families through complex genetic conditions.",
     },
     {
         id: "dr-s-manish",
@@ -97,7 +97,7 @@ export const doctors: Doctor[] = [
         designation: "MBBS, DNB (OBG), Fellowship in Reproductive Medicine — Obstetrics & Gynaecology",
         experience: "3+",
         image: "/images/doctor/dr-sushmitha.webp",
-        bio: "Completed DNB in Obstetrics & Gynaecology and a fellowship in Reproductive Medicine, with experience managing PCOS, endometriosis, tubal factors and poor ovarian reserve across the full IVF/ICSI spectrum.",
+        bio: "She completed her MBBS at RIMS Kadapa and her DNB in Obstetrics & Gynaecology in 2018, followed by a Fellowship in Reproductive Medicine in Bangalore (2019) and a Diploma Fellowship in ART & Reproductive Medicine from Kiel University, Germany. She has worked as an IVF consultant for 3 years and manages fertility problems including PCOS, premature ovarian insufficiency, endometriosis, tubal factors, Müllerian anomalies, poor ovarian reserve, male factor infertility and obesity-related infertility. Her research interests include poor ovarian reserve, unexplained infertility, fertility preservation and premature ovarian failure.",
     },
     {
         id: "dr-jampani-ravitheja",
@@ -106,7 +106,7 @@ export const doctors: Doctor[] = [
         designation: "Consultant Orthopedic Surgeon",
         experience: "8+",
         image: "/images/doctor/dr-jampani-ravitheja.webp",
-        bio: "Specialises in knee and hip replacement, arthroscopy and trauma surgery, with more than 1,500 joint replacement surgeries and 3,000+ trauma and fracture surgeries performed.",
+        bio: "An orthopaedic surgeon with more than 8 years of experience in orthopaedics and joint replacement surgery. He specialises in knee and hip replacement, arthroscopy, trauma surgery, paediatric orthopaedics, sports injury management and pelvi-acetabular surgery, and has performed more than 1,500 joint replacements, 800 arthroscopic procedures and 3,000 trauma and fracture surgeries.",
     },
     {
         id: "dr-gayathri",
@@ -114,7 +114,7 @@ export const doctors: Doctor[] = [
         name: "Dr. Gayathri",
         designation: "Infertility Specialist",
         experience: "10+",
-        bio: "Specialises in ovum pickups, embryo transfers, diagnostic hysteroscopy and D&C procedures, with a strong focus on counselling patients through the causes and options for infertility.",
+        bio: "An infertility specialist with more than 10 years of experience in the evaluation, diagnosis and treatment of infertility. Her areas of specialisation include ovum pick-up, embryo transfer, diagnostic hysteroscopy and D&C procedures, and she is known for counselling patients clearly about the causes of infertility and their treatment options.",
     },
     {
         id: "dr-rajyalakshmi",

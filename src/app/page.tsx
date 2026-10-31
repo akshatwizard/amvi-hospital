@@ -4,6 +4,7 @@ import Specialties from "@/components/home/specialties";
 import Highlights from "@/components/home/highlights";
 import AboutHospital from "@/components/home/about_hospital";
 import AboutDoctor from "@/components/home/about_doctor";
+import Awards from "@/components/home/awards";
 import Testimonials from "@/components/home/testimonials";
 import CareJourney from "@/components/home/care_journey";
 import Faq from "@/components/home/faq";
@@ -28,6 +29,7 @@ export default function Home() {
       <Testimonials />
       <AboutHospital />
       <AboutDoctor />
+      <Awards />
       <CareTeam />
       <BeforeYouGo />
       {/* Hidden until real Instagram/Facebook posts are linked in src/constants/social-insights.ts */}

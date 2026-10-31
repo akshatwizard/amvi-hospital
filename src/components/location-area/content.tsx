@@ -8,6 +8,7 @@ import RevealText from '@/shared/reveal_text'
 import Reveal from '@/shared/reveal'
 import Counter from '@/shared/counter'
 import FaqAccordion from '@/shared/faq-accordion'
+import { extraFaqs } from '@/constants/extra-content'
 import { stats } from '@/constants/stats'
 import { locations } from '@/constants/locations'
 import { LocationArea } from '@/types/location-area'
@@ -113,7 +114,7 @@ export default function LocationAreaContent({ area }: { area: LocationArea }) {
             <Section className='bg-rose-50/40'>
                 <Wrapper className='max-w-3xl'>
                     <RevealText as="h2" text={`FAQs for patients near ${area.name}`} className='font-serif text-2xl md:text-3xl text-plum-ink mb-8' />
-                    <FaqAccordion items={area.faqs} />
+                    <FaqAccordion items={[...area.faqs, ...extraFaqs(`/location/${area.slug}`)]} />
                 </Wrapper>
             </Section>
         </>

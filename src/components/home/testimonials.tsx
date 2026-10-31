@@ -9,6 +9,7 @@ import { Section, Wrapper } from '@/shared/sections'
 import RevealText from '@/shared/reveal_text'
 import Reveal from '@/shared/reveal'
 import Counter from '@/shared/counter'
+import { googleReviewLinks } from '@/constants/social'
 import { testimonials } from '@/constants/testimonials'
 
 export default function Testimonials() {
@@ -51,6 +52,20 @@ export default function Testimonials() {
                                     <Counter value={352} /> Google reviews
                                 </p>
                             </div>
+                            <p className='text-sm text-warm-slate mt-3 flex flex-wrap items-center gap-x-3 gap-y-1'>
+                                <span>Read our reviews on Google:</span>
+                                {googleReviewLinks.map((g) => (
+                                    <a
+                                        key={g.branch}
+                                        href={g.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className='text-rose-700 underline underline-offset-4 decoration-rose-300 hover:decoration-rose-700'
+                                    >
+                                        {g.branch}
+                                    </a>
+                                ))}
+                            </p>
                         </Reveal>
                     </div>
 

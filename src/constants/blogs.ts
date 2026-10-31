@@ -1,6 +1,11 @@
+import { restoredArticles } from "./restored-articles"
+
 export interface BlogSection {
     heading: string
     paragraphs: string[]
+    bullets?: string[]
+    // Optional closing paragraph shown after the bullet list
+    after?: string[]
 }
 
 export interface Blog {
@@ -17,6 +22,7 @@ export interface Blog {
     // web-search excerpts are kept in the data but hidden until confirmed
     // the same way. Flip to true once verified.
     published: boolean
+    faqs?: { question: string; answer: string }[]
 }
 
 // NOTE ON IMAGES: amvihospitals.com blocks automated fetching of its /blogs/
@@ -24,56 +30,7 @@ export interface Blog {
 // These use themed Unsplash photography as a placeholder — swap in real
 // AMVI photography before launch (see Pre-Launch Action Plan, Images).
 export const blogs: Blog[] = [
-    {
-        slug: "normal-delivery-vs-c-section",
-        title: "Normal Delivery vs. C-Section: What's Best for You?",
-        excerpt:
-            "There's no single right answer — it depends on your health, your baby's health, and your medical situation. A clear, honest comparison of both delivery methods.",
-        category: "Maternity",
-        date: "September 12, 2026",
-        readTime: "6 min read",
-        image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=900&h=600&fit=crop",
-        published: false,
-        sections: [
-            {
-                heading: "A question almost every expecting mother asks",
-                paragraphs: [
-                    "One of the most common questions we hear from expecting mothers in Hyderabad is: should I choose a normal delivery or a C-section? It's a question that brings real anxiety, especially for first-time mothers — and the honest answer is that there isn't a single right choice. It depends entirely on your health, your baby's health, and how your labour progresses.",
-                    "A normal delivery, also called a vaginal birth, is the way babies have been born for as long as humans have existed — the baby moves through the birth canal, guided by uterine contractions. A C-section (caesarean section) is a surgical procedure where the baby is delivered through an incision in the abdomen and uterus. Both are safe when performed by the right medical team in a well-equipped hospital.",
-                ],
-            },
-            {
-                heading: "A quick fact worth knowing",
-                paragraphs: [
-                    "About 40–50% of deliveries in urban India are now C-sections. The World Health Organization recommends that C-section rates shouldn't exceed 10–15% of all births. That gap matters: it means most healthy pregnancies can, and should, aim for a normal delivery when there's no medical reason to do otherwise.",
-                ],
-            },
-            {
-                heading: "How a normal delivery works",
-                paragraphs: [
-                    "Labour begins when your body starts producing hormones that trigger contractions. These contractions gradually dilate the cervix, and once it reaches 10 cm, you push the baby out with each contraction, guided by your doctor or midwife. Recovery is typically faster and more comfortable — most mothers feel close to normal within 2–3 weeks, and the risk of infection is lower since there's no surgical incision.",
-                ],
-            },
-            {
-                heading: "When a C-section becomes the safer choice",
-                paragraphs: [
-                    "A C-section can be planned in advance, when your doctor already knows vaginal birth carries risk, or performed as an emergency if labour becomes complicated or your baby shows signs of distress. It's major surgery, so recovery takes longer and needs more careful post-delivery monitoring — but in the situations where it's genuinely needed, it can be life-saving for both mother and baby.",
-                ],
-            },
-            {
-                heading: "Recovery: what to expect either way",
-                paragraphs: [
-                    "After a normal delivery, recovery is usually faster with minimal discomfort, and most mothers are up and moving within a day. After a C-section, you'll need more rest and wound care, though walking early — under medical supervision — helps circulation and healing. Both paths require follow-up with your obstetrician, and both call for the same things underneath: proper nutrition, gentle self-care, and a medical team you trust.",
-                ],
-            },
-            {
-                heading: "The decision that actually matters",
-                paragraphs: [
-                    "At AMVI Hospitals, we don't decide your delivery method in advance unless there's a clear medical reason to. Dr. Shaivalini Kamarapu and the maternity team monitor your pregnancy closely and talk you through the safest option as things progress — and if a C-section does become necessary, you'll understand exactly why, not just be told it's happening.",
-                ],
-            },
-        ],
-    },
+    ...restoredArticles,
     {
         slug: "understanding-initial-stage-of-ivf",
         title: "Understanding the Initial Stage of IVF",

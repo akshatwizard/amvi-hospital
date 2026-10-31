@@ -1,6 +1,7 @@
 "use client"
 
 import Link from 'next/link'
+import ExtraSections from '@/shared/extra-sections'
 import { Check, AlertTriangle, ArrowUpRight, X } from 'lucide-react'
 import { Section, Wrapper } from '@/shared/sections'
 import { StaggerContainer, StaggerItem } from '@/shared/stagger'
@@ -156,6 +157,10 @@ export default function GShotContent() {
                             </StaggerContainer>
                         </div>
                     </div>
+                </div>
+
+                <div className='flex flex-col gap-20 max-w-4xl'>
+                    <ExtraSections path="/cosmetic-gynecology/g-shot" />
                 </div>
 
                 <div className='pt-4 border-t border-rose-100'>

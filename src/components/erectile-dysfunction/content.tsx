@@ -10,6 +10,8 @@ import Counter from '@/shared/counter'
 import ConditionSidebar from '@/shared/condition-sidebar'
 import IconItemGrid from '@/shared/icon-item-grid'
 import FaqAccordion from '@/shared/faq-accordion'
+import ExtraSections from '@/shared/extra-sections'
+import { extraFaqs } from '@/constants/extra-content'
 import { stats } from '@/constants/stats'
 import { infertilityConditionNav } from '@/constants/gynaecology-nav'
 import {
@@ -171,9 +173,11 @@ export default function ErectileDysfunctionContent() {
                         </StaggerContainer>
                     </div>
 
+                    <ExtraSections path="/infertility/male/erectile-dysfunction" />
+
                     <div>
                         <RevealText as="h2" text="FAQs related to erectile dysfunction" className='font-serif text-2xl md:text-3xl text-plum-ink mb-4' />
-                        <FaqAccordion items={edFaqs} />
+                        <FaqAccordion items={[...edFaqs, ...extraFaqs("/infertility/male/erectile-dysfunction")]} />
                     </div>
                 </div>
             </Wrapper>

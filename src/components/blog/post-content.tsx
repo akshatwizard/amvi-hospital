@@ -8,6 +8,7 @@ import { StaggerContainer, StaggerItem } from '@/shared/stagger'
 import RevealText from '@/shared/reveal_text'
 import Reveal from '@/shared/reveal'
 import { blogs, Blog } from '@/constants/blogs'
+import FaqAccordion from '@/shared/faq-accordion'
 
 export default function BlogPostContent({ blog }: { blog: Blog }) {
     // Only link to posts that are actually live; unpublished slugs return 404.
@@ -40,10 +41,27 @@ export default function BlogPostContent({ blog }: { blog: Blog }) {
                                             <p className='text-sm md:text-base text-warm-slate leading-relaxed'>{p}</p>
                                         </Reveal>
                                     ))}
+                                    {section.bullets && (
+                                        <ul className='flex flex-col gap-2 pl-5 list-disc marker:text-rose-400'>
+                                            {section.bullets.map((b) => (
+                                                <li key={b} className='text-sm md:text-base text-warm-slate leading-relaxed'>{b}</li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                    {section.after?.map((p, j) => (
+                                        <p key={`a${j}`} className='text-sm md:text-base text-warm-slate leading-relaxed'>{p}</p>
+                                    ))}
                                 </div>
                             </div>
                         ))}
                     </div>
+
+                    {blog.faqs && blog.faqs.length > 0 && (
+                        <div className='mt-14'>
+                            <h2 className='font-serif text-2xl md:text-3xl text-plum-ink mb-4'>Frequently asked questions</h2>
+                            <FaqAccordion items={blog.faqs} />
+                        </div>
+                    )}
 
                     <Reveal delay={0.2}>
                         <div className='mt-14 p-6 md:p-8 rounded-card bg-rose-50 border border-rose-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5'>

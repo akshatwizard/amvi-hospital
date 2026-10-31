@@ -10,6 +10,8 @@ import Counter from '@/shared/counter'
 import ConditionSidebar from '@/shared/condition-sidebar'
 import IconItemGrid from '@/shared/icon-item-grid'
 import FaqAccordion from '@/shared/faq-accordion'
+import ExtraSections from '@/shared/extra-sections'
+import { extraFaqs } from '@/constants/extra-content'
 import { stats } from '@/constants/stats'
 import { gynaecologyConditionNav } from '@/constants/gynaecology-nav'
 import {
@@ -141,9 +143,11 @@ export default function EndometriosisContent() {
                         </StaggerContainer>
                     </div>
 
+                    <ExtraSections path="/gynaecology/endometriosis" />
+
                     <div>
                         <RevealText as="h2" text="FAQs related to endometriosis" className='font-serif text-2xl md:text-3xl text-plum-ink mb-4' />
-                        <FaqAccordion items={endometriosisFaqs} />
+                        <FaqAccordion items={[...endometriosisFaqs, ...extraFaqs("/gynaecology/endometriosis")]} />
                     </div>
                 </div>
             </Wrapper>

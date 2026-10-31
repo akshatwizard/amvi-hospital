@@ -8,6 +8,7 @@ import { socialLinks } from '@/constants/social'
 
 const socials = [
     { label: "Instagram", href: socialLinks.instagram, Icon: InstagramIcon },
+    { label: "Instagram (Telugu)", href: socialLinks.instagramTelugu, Icon: InstagramIcon },
     { label: "Facebook", href: socialLinks.facebook, Icon: FacebookIcon },
     { label: "YouTube", href: socialLinks.youtube, Icon: YoutubeIcon },
 ].filter((s) => s.href)

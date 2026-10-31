@@ -9,6 +9,8 @@ import Counter from '@/shared/counter'
 import ProcedureNav from '@/shared/procedure-nav'
 import ExpandableList from '@/shared/expandable-list'
 import FaqAccordion from '@/shared/faq-accordion'
+import ExtraSections from '@/shared/extra-sections'
+import { extraFaqs } from '@/constants/extra-content'
 import { stats } from '@/constants/stats'
 import { laparoscopyNav } from '@/constants/laparoscopy-nav'
 import {
@@ -176,10 +178,12 @@ export default function LaparoscopicHysterectomyContent() {
                     </StaggerContainer>
                 </div>
 
+                <ExtraSections path="/laparoscopy/hysterectomy" />
+
                 {/* FAQ */}
                 <div>
                     <RevealText as="h2" text="FAQs related to laparoscopic hysterectomy" className='font-serif text-2xl md:text-3xl text-plum-ink mb-4' />
-                    <FaqAccordion items={hysterectomyFaqs} />
+                    <FaqAccordion items={[...hysterectomyFaqs, ...extraFaqs("/laparoscopy/hysterectomy")]} />
                 </div>
             </Wrapper>
         </Section>

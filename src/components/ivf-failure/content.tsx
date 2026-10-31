@@ -9,6 +9,8 @@ import Counter from '@/shared/counter'
 import ConditionSidebar from '@/shared/condition-sidebar'
 import IconItemGrid from '@/shared/icon-item-grid'
 import FaqAccordion from '@/shared/faq-accordion'
+import ExtraSections from '@/shared/extra-sections'
+import { extraFaqs } from '@/constants/extra-content'
 import { stats } from '@/constants/stats'
 import { infertilityConditionNav } from '@/constants/gynaecology-nav'
 import { ivfFailureIntro, ivfFailureReasons, ivfFailureNextSteps, ivfFailureFaqs } from '@/constants/ivf-failure'
@@ -66,9 +68,11 @@ export default function IvfFailureContent() {
                         <IconItemGrid items={ivfFailureNextSteps} />
                     </div>
 
+                    <ExtraSections path="/infertility/ivf-failure" />
+
                     <div>
                         <RevealText as="h2" text="FAQs related to IVF failure" className='font-serif text-2xl md:text-3xl text-plum-ink mb-4' />
-                        <FaqAccordion items={ivfFailureFaqs} />
+                        <FaqAccordion items={[...ivfFailureFaqs, ...extraFaqs("/infertility/ivf-failure")]} />
                     </div>
                 </div>
             </Wrapper>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { MapPin, Phone, Clock } from 'lucide-react'
 import { Section, Wrapper } from '@/shared/sections'
 import { StaggerContainer, StaggerItem } from '@/shared/stagger'
@@ -66,6 +67,12 @@ export default function Locations() {
                                     >
                                         Call branch
                                     </a>
+                                    <Link
+                                        href={`/location/${loc.name.toLowerCase()}`}
+                                        className='inline-flex items-center text-sm text-rose-700 underline underline-offset-4 decoration-rose-300 hover:decoration-rose-700'
+                                    >
+                                        Branch details
+                                    </Link>
                                 </div>
                             </div>
                         </StaggerItem>
