@@ -58,4 +58,11 @@ export const specialties: Specialty[] = [
             "Confidential reconstructive and aesthetic procedures — from vaginal and labial reconstruction to hymenoplasty and vaginal tightening — handled with the same clinical discretion and care as any other specialty here.",
         href: "/cosmetic-gynecology",
     },
+    {
+        index: "09",
+        name: "Urogynecology",
+        description:
+            "Care for pelvic floor problems that many women silently live with — leaking urine, a bulge or heaviness in the vagina (prolapse) and bladder symptoms. Treatment starts with exercises, physiotherapy and pessaries, with pelvic reconstruction surgery and cystoscopy when needed.",
+        href: "/gynaecology/uro",
+    },
 ]

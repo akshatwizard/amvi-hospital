@@ -27,8 +27,10 @@ export default function Specialties() {
                         />
                         <Reveal delay={0.25}>
                             <p className='text-warm-slate mt-4 max-w-sm text-sm'>
-                                From your first consultation to delivery day and beyond, our specialists cover
-                                every area of women&apos;s health under one roof across both our centers.
+                                Our care starts from a simple idea: women are different, and they heal differently.
+                                So every treatment plan is personalised. From your first consultation to delivery day
+                                and beyond, our specialists cover every area of women&apos;s health under one roof,
+                                with modern facilities and equipment at both our centres.
                             </p>
                         </Reveal>
 

@@ -156,7 +156,7 @@ const legacyRedirects: Record<string, string> = {
   "/top-gynecologist-tubal-recanalization-treatment": "/laparoscopy/tubal-recanalization",
   "/top-hospital-for-endometriosis-treatment": "/gynaecology/endometriosis",
   "/twins-or-triplets-pregnancy": "/maternity/twins-triplets",
-  "/urogynecology-services-pelvic-floor-disorders-treatment": "/gynaecology",
+  "/urogynecology-services-pelvic-floor-disorders-treatment": "/gynaecology/uro",
   "/vagina-or-labiaplasty-designer": "/cosmetic-gynecology/designer-vagina",
   "/vaginal-or-labiaplasty-reconstruction": "/cosmetic-gynecology/vaginal-reconstruction",
   "/vaginal-or-labiaplasty-tightening-surgery": "/cosmetic-gynecology/vaginal-tightening",

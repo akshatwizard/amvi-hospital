@@ -54,6 +54,7 @@ export const navItems: MenuItem[] = [
             {
                 title: "Urogynecology",
                 items: [
+                    { name: "Urogynecology overview", href: "/gynaecology/uro" },
                     { name: "Prolapse", href: "/gynaecology/uro/prolapse" },
                     { name: "Urinary incontinence", href: "/gynaecology/uro/urinary-incontinence" },
                     { name: "Pelvic reconstruction", href: "/gynaecology/uro/pelvic-reconstruction" },

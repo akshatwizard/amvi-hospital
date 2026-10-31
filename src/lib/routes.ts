@@ -33,6 +33,7 @@ export const staticRoutes: string[] = [
     "/gynaecology/menstrual-problems",
     "/gynaecology/pcod",
     "/gynaecology/pcos",
+    "/gynaecology/uro",
     "/gynaecology/uro/cystoscopy",
     "/gynaecology/uro/pelvic-reconstruction",
     "/gynaecology/uro/prolapse",
