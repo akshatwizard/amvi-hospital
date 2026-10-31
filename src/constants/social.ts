@@ -4,7 +4,7 @@ export const socialLinks = {
     facebook: "https://www.facebook.com/amvihospital",
     instagram: "https://www.instagram.com/dr_shaivalini_official/",
     instagramTelugu: "https://www.instagram.com/dr_shaivalini_telugu/",
-    youtube: "",
+    youtube: "https://www.youtube.com/@AMVIHospital",
 }
 
 // Google Business Profile of each branch (used for "Read our Google reviews").

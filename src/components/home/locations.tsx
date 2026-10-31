@@ -24,7 +24,7 @@ export default function Locations() {
                     />
                     <Reveal delay={0.25}>
                         <p className='text-warm-slate mt-4 text-sm md:text-base'>
-                            Open Monday to Saturday, 10:00 AM to 6:00 PM. Walk-ins are welcome at either branch.
+                            Open 24/7 — call either branch any time, day or night. Walk-ins are welcome.
                         </p>
                     </Reveal>
                 </div>
@@ -42,7 +42,7 @@ export default function Locations() {
 
                                 <div className='flex items-center gap-3'>
                                     <Clock size={18} className='text-rose-500 shrink-0' />
-                                    <p className='text-sm text-plum-ink'>Mon – Sat, 10:00 AM – 6:00 PM</p>
+                                    <p className='text-sm text-plum-ink'>Open 24/7</p>
                                 </div>
 
                                 <div className='flex items-center gap-3'>

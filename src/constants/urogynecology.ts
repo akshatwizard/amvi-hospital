@@ -1,4 +1,5 @@
 import { FaqItem } from "@/types/condition-page"
+import type { HubContent } from "@/components/hub/condition-hub"
 
 // Content for the Urogynecology overview page (/gynaecology/uro).
 // Facts here are summarised from the four urogynecology condition pages.
@@ -96,3 +97,19 @@ export const urogynecologyFaqs: FaqItem[] = [
         answer: "Use the appointment form on our Contact page, or call Puppalaguda on +91 91000 09669 or Attapur on +91 80088 42200. You can also message us on WhatsApp.",
     },
 ]
+
+export const urogynecologyHub: HubContent = {
+    overviewHeading: "Pelvic floor care for women at AMVI Hospitals",
+    intro: urogynecologyIntro,
+    image: "/images/doctor-consultation.jpg",
+    imageAlt: "Doctor consultation at AMVI Hospitals, Hyderabad",
+    conditionsHeading: "Urogynecology conditions and procedures",
+    conditions: urogynecologyConditions,
+    symptomsHeading: "Symptoms worth getting checked",
+    symptomsLead: "These are common, and treatable. If any of them affect your day, book a consultation.",
+    symptoms: urogynecologySymptoms,
+    approachHeading: "From first visit to recovery",
+    approach: urogynecologyApproach,
+    faqHeading: "Questions about urogynecology",
+    faqs: urogynecologyFaqs,
+}

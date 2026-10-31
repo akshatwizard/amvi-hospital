@@ -44,6 +44,7 @@ export const navItems: MenuItem[] = [
             {
                 title: "Cancers",
                 items: [
+                    { name: "Cancer care overview", href: "/gynaecology/cancers" },
                     { name: "Cervical cancer", href: "/gynaecology/cancers/cervical" },
                     { name: "Endometrial cancer", href: "/gynaecology/cancers/endometrial" },
                     { name: "Vulvar cancer", href: "/gynaecology/cancers/vulvar" },
@@ -74,6 +75,7 @@ export const navItems: MenuItem[] = [
                 items: [
                     { name: "Infertility assessment", href: "/infertility/assessment" },
                     { name: "Genetic screening", href: "/infertility/genetic-screening" },
+                    { name: "PGT (embryo genetic testing)", href: "/infertility/pgt" },
                     { name: "Follicular monitoring", href: "/infertility/follicular-monitoring" },
                     { name: "Ovulation induction", href: "/infertility/ovulation-induction" },
                     { name: "CASA", href: "/infertility/casa" },
@@ -97,6 +99,7 @@ export const navItems: MenuItem[] = [
                     { name: "ICSI", href: "/infertility/icsi" },
                     { name: "IMSI", href: "/infertility/imsi" },
                     { name: "Stem cell IVF", href: "/infertility/stem-cell-ivf" },
+                    { name: "Stem cell therapy", href: "/infertility/stem-cell-therapy" },
                     { name: "IUI", href: "/infertility/iui" },
                     { name: "PICSI", href: "/infertility/picsi" },
                     { name: "IVF failure", href: "/infertility/ivf-failure" },
@@ -106,11 +109,13 @@ export const navItems: MenuItem[] = [
         ],
     },
     {
-        name: "Laparoscopic Surgery",
+        name: "Robotics & Laparoscopy",
         href: "/laparoscopy",
-        description: "Minimally invasive procedures with faster recovery.",
+        description: "Robotic and keyhole surgery with faster recovery.",
         sub_menu: [
-            { name: "Laparoscopic surgery overview", href: "/laparoscopy" },
+            { name: "Laparoscopy overview", href: "/laparoscopy" },
+            { name: "Robotic surgery", href: "/laparoscopy/robotic-surgery" },
+            { name: "Endometriosis surgery", href: "/laparoscopy/endometriosis-surgery" },
             { name: "Laparoscopic hysterectomy", href: "/laparoscopy/hysterectomy" },
             { name: "Laparoscopic myomectomy", href: "/laparoscopy/myomectomy" },
             { name: "Tubal recanalization", href: "/laparoscopy/tubal-recanalization" },
@@ -162,6 +167,7 @@ export const navItems: MenuItem[] = [
                     { name: "High risk pregnancy", href: "/maternity/high-risk-pregnancy" },
                     { name: "OB/GYN ultrasound", href: "/maternity/ob-gyn-ultrasound" },
                     { name: "Twins / triplet pregnancy", href: "/maternity/twins-triplets" },
+                    { name: "Paediatrics & NICU", href: "/pediatrics" },
                 ],
             },
             {
@@ -192,7 +198,10 @@ export const navItems: MenuItem[] = [
         description: "Everything you need before and after your visit.",
         sub_menu: [
             { name: "Preparing for your visit", href: "/patient-guide" },
-            { name: "Reviews", href: "https://www.google.com/maps/place/AMVI+Hospital", new_tab: true },
+            { name: "Reviews", href: "/reviews" },
+            { name: "Video gallery", href: "/video-gallery" },
+            { name: "Video testimonials", href: "/video-testimonials" },
+            { name: "Image gallery", href: "/image-gallery" },
             { name: "Blogs", href: "/blog" },
         ],
     },

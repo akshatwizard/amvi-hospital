@@ -9,6 +9,18 @@ export const laparoscopyIntro: string[] = [
 
 export const laparoscopyProcedures: Condition[] = [
     {
+        name: "Robotic Surgery",
+        description: "Robotic-assisted keyhole surgery for complex hysterectomy, myomectomy, endometriosis and prolapse, with a 3D view and high precision.",
+        image: "/images/gallery/operation-theatre-1.webp",
+        href: "/laparoscopy/robotic-surgery",
+    },
+    {
+        name: "Endometriosis Surgery",
+        description: "Laparoscopic excision of endometriosis and endometriomas to relieve pain while protecting fertility.",
+        image: "/images/gallery/laparoscopic-surgery-theatre.webp",
+        href: "/laparoscopy/endometriosis-surgery",
+    },
+    {
         name: "Laparoscopic Hysterectomy",
         description: "Minimally invasive removal of the uterus for fibroids, heavy bleeding, or other benign gynaecological conditions.",
         image: "/images/hero/laparoscopic-hysterectomy-hero.png",

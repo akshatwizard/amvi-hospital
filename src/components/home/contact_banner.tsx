@@ -23,7 +23,7 @@ export default function ContactBanner() {
                         />
                         <Reveal delay={0.25}>
                             <p className='text-rose-100/80 mt-4 text-sm md:text-base max-w-md'>
-                                Book a consultation at either branch, or call directly if you'd rather speak
+                                Book a consultation at either branch, or call us 24/7 if you&apos;d rather speak
                                 with our team first.
                             </p>
                         </Reveal>

@@ -1,4 +1,5 @@
 import { SITE_URL, SITE_NAME } from "@/lib/site"
+import { socialLinks } from "@/constants/social"
 
 // schema.org data describing the hospital and its two branches.
 // Shown to Google on every page so it can connect the site to the
@@ -9,9 +10,10 @@ import { SITE_URL, SITE_NAME } from "@/lib/site"
 const openingHours = [
     {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        opens: "10:00",
-        closes: "18:00",
+        // Open 24/7 (confirmed by the hospital, Oct 2026)
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        opens: "00:00",
+        closes: "23:59",
     },
 ]
 
@@ -26,6 +28,8 @@ export const hospitalSchema = {
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo/amvi-logo.png`,
     email: "amvihospitals@gmail.com",
+    // Official social profiles, so Google can link them to the hospital
+    sameAs: Object.values(socialLinks).filter(Boolean),
     medicalSpecialty,
     description:
         "Women's hospital in Hyderabad offering IVF and fertility treatment, maternity care, gynaecology, laparoscopic surgery and cosmetic gynaecology.",

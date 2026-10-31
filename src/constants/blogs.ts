@@ -1,4 +1,6 @@
 import { restoredArticles } from "./restored-articles"
+import { restoredArticles2 } from "./restored-articles-2"
+import { restoredArticles3 } from "./restored-articles-3"
 
 export interface BlogSection {
     heading: string
@@ -31,6 +33,8 @@ export interface Blog {
 // AMVI photography before launch (see Pre-Launch Action Plan, Images).
 export const blogs: Blog[] = [
     ...restoredArticles,
+    ...restoredArticles2,
+    ...restoredArticles3,
     {
         slug: "understanding-initial-stage-of-ivf",
         title: "Understanding the Initial Stage of IVF",
@@ -291,49 +295,6 @@ export const blogs: Blog[] = [
         ],
     },
     {
-        slug: "why-choose-laparoscopic-surgery",
-        title: "Why Choose Laparoscopic Surgery: Purpose, Types & Benefits",
-        excerpt:
-            "Keyhole surgery treats the same conditions as open surgery, with smaller incisions, less pain, and a fraction of the recovery time.",
-        category: "Laparoscopic Surgery",
-        date: "August 9, 2026",
-        readTime: "6 min read",
-        image: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=900&h=600&fit=crop",
-        published: false,
-        sections: [
-            {
-                heading: "The same surgery, a very different experience",
-                paragraphs: [
-                    "Laparoscopic surgery treats the same range of gynaecological conditions as traditional open surgery — fibroids, endometriosis, ovarian cysts, and more — but through 2–3 small incisions instead of one large cut. At AMVI Hospitals, Dr. Shaivalini Kamarapu has performed over 1,000 laparoscopic procedures, and it remains one of the safest, most widely preferred approaches for gynaecological surgery today.",
-                ],
-            },
-            {
-                heading: "The types of laparoscopic surgery we perform",
-                paragraphs: [
-                    "This includes laparoscopic hysterectomy for fibroids or heavy bleeding, myomectomy for fibroid removal while preserving the uterus, diagnostic laparoscopy for unexplained pelvic pain or infertility, operative hysteroscopy for conditions inside the uterine cavity, and tubal recanalization for women who've had tubal ligation and now wish to conceive. Each uses the same core minimally-invasive approach, adapted to the specific procedure.",
-                ],
-            },
-            {
-                heading: "Why patients — and surgeons — prefer it",
-                paragraphs: [
-                    "Smaller incisions mean less post-operative pain, lower infection risk, and scarring that's barely visible once healed. The laparoscope also gives the surgeon a magnified, high-definition view of internal structures, often improving surgical precision compared to open surgery. For patients, the practical difference is enormous: most go home the same day or after one overnight stay, instead of a multi-day hospital admission.",
-                ],
-            },
-            {
-                heading: "Recovery: the real difference",
-                paragraphs: [
-                    "Recovery from laparoscopic surgery typically runs 2–5 days for lighter procedures, compared to 4–6 weeks for open surgery. Most patients return to desk work within 3–5 days and resume full activity, including exercise, within 2–4 weeks. That difference alone is why laparoscopy has become the default approach wherever it's medically appropriate.",
-                ],
-            },
-            {
-                heading: "Is it right for your condition?",
-                paragraphs: [
-                    "Not every case is suitable for a laparoscopic approach — very complex or advanced conditions sometimes still require open surgery. That decision is made individually, based on your specific diagnosis, not a blanket preference either way. If you're facing a gynaecological surgery and want to understand your options, that's exactly the conversation to have during consultation at AMVI Hospitals.",
-                ],
-            },
-        ],
-    },
-    {
         slug: "episiotomy-procedure-recovery-care",
         title: "What Every Woman Should Know About Episiotomy: Procedure, Recovery & Care",
         excerpt:
@@ -372,49 +333,6 @@ export const blogs: Blog[] = [
                 heading: "Whole-person care, not just the delivery",
                 paragraphs: [
                     "Whether your delivery was natural or assisted, postnatal recovery deserves the same attention as the pregnancy itself. AMVI Hospitals supports that recovery fully — from delivery through postnatal care, and any follow-up needs that come after, all under one roof.",
-                ],
-            },
-        ],
-    },
-    {
-        slug: "amh-test-ovarian-reserve",
-        title: "AMH Test & Ovarian Reserve: What Your Results Mean",
-        excerpt:
-            "AMH is one of the most useful markers for understanding your ovarian reserve — here's what the number actually tells you.",
-        category: "Fertility",
-        date: "July 30, 2026",
-        readTime: "5 min read",
-        image: "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=900&h=600&fit=crop",
-        published: false,
-        sections: [
-            {
-                heading: "What AMH actually measures",
-                paragraphs: [
-                    "Anti-Müllerian Hormone (AMH) is produced by small follicles in the ovaries, and its level in your blood gives a reasonably reliable picture of your ovarian reserve — roughly, how many eggs remain available. It's a simple blood test that can be done on any day of your menstrual cycle, which makes it one of the more convenient fertility markers to check.",
-                ],
-            },
-            {
-                heading: "Why it matters",
-                paragraphs: [
-                    "AMH helps guide decisions around fertility planning — whether that's timing a pregnancy, considering egg freezing, or planning an IVF stimulation protocol. A low AMH doesn't mean pregnancy is impossible, and a high AMH doesn't guarantee an easy conception; it's one important piece of a larger picture, not a verdict on its own.",
-                ],
-            },
-            {
-                heading: "Understanding a low result",
-                paragraphs: [
-                    "A lower-than-expected AMH suggests a reduced number of remaining eggs, which can happen with age, certain medical conditions, or sometimes for reasons that aren't fully clear. It's a signal to have a proper fertility conversation sooner rather than later — particularly if you're planning to conceive in the next few years — not a reason for alarm on its own.",
-                ],
-            },
-            {
-                heading: "Understanding a high result",
-                paragraphs: [
-                    "A higher AMH is often seen in women with PCOS, and while it can suggest a larger number of eggs, it also means stimulation protocols during IVF need to be managed carefully to avoid ovarian hyperstimulation. This is exactly why AMH results are interpreted alongside a full clinical picture, not read in isolation.",
-                ],
-            },
-            {
-                heading: "What to do with your result",
-                paragraphs: [
-                    "Whatever your AMH level, the right next step is a conversation with a fertility specialist who can put the number in context with your age, cycle history, and family planning goals. At AMVI Hospitals, AMH testing is available at both branches, with results reviewed directly with Dr. Shaivalini rather than handed over as a number alone.",
                 ],
             },
         ],

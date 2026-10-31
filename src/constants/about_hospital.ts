@@ -25,6 +25,9 @@ export const memberships = [
 
 
 export const facility_features = [
+    "Fertility and IVF care, from assessment and IUI to IVF, ICSI and embryo freezing",
+    "Maternity care from pregnancy planning to normal, painless and caesarean delivery",
+    "Open 24/7 at both branches, with a team you can call any time",
     "Two air-conditioned operation theatres for major and minor procedures",
     "Private air-conditioned suites and recovery rooms for post-operative care",
     "In-house pharmacy for immediate access to prescribed medication",
@@ -32,16 +35,17 @@ export const facility_features = [
 ]
 
 export const portfolio_areas = [
-    "Maternity & child care",
-    "Fertility",
+    "Fertility & IVF",
+    "Maternity & newborn care",
+    "Gynaecology & surgery",
     "Cosmetic gynaecology",
 ]
 
 
 export const aboutIntro: string[] = [
-    "AMVI Hospital is a Daycare Surgery Centre and state-of-the-art super-specialty hospital focused entirely on women's health, offering a full range of advanced medical and surgical care across both inpatient and outpatient services.",
+    "AMVI Hospitals is a fertility and maternity hospital in Hyderabad, focused entirely on women and families: from fertility assessment, IUI and IVF to pregnancy care, delivery and newborn care, with advanced gynaecology and surgery under the same roof. Both branches are open 24/7.",
     "Guided by a vision of accessible, innovative care, AMVI brings multiple super-specialties together under one roof, backed by a team of doctors of national and international standing.",
-    "As a Daycare Surgery Centre, AMVI is equipped with two air-conditioned operation theatres for major and minor procedures, private air-conditioned suites and recovery rooms for post-operative care, an in-house pharmacy, and an on-site diagnostic centre with the latest ultrasound equipment.",
+    "AMVI is equipped with two air-conditioned operation theatres for major and minor procedures, private air-conditioned suites and recovery rooms for post-operative care, an in-house pharmacy, and an on-site diagnostic centre with the latest ultrasound equipment.",
 ]
 
 export const aboutPillars: AboutPillar[] = [

@@ -2,6 +2,7 @@
 // added to the matching pages of the new site. Keyed by page path.
 // Sections render via <ExtraSections path="..." />; FAQs are appended to each page's FAQ list.
 import { FaqItem } from "@/types/condition-page"
+import { extraFaqs2 } from "./extra-faqs-2"
 
 export type ExtraItem = { title: string; text?: string; bullets?: string[]; outro?: string }
 export type ExtraSection = { heading: string; paragraphs?: string[]; bullets?: string[]; items?: ExtraItem[]; outro?: string }
@@ -756,5 +757,5 @@ export const extraContent: Record<string, { sections?: ExtraSection[]; faqs?: Fa
     }
 }
 
-export const extraFaqs = (path: string): FaqItem[] => extraContent[path]?.faqs ?? []
+export const extraFaqs = (path: string): FaqItem[] => [...(extraContent[path]?.faqs ?? []), ...(extraFaqs2[path] ?? [])]
 export const extraSections = (path: string): ExtraSection[] => extraContent[path]?.sections ?? []

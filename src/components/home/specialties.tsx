@@ -21,14 +21,14 @@ export default function Specialties() {
                         </Reveal>
                         <RevealText
                             as="h2"
-                            text="Every stage of care, under one roof"
+                            text="From fertility to delivery, under one roof"
                             className='font-serif text-3xl md:text-4xl text-plum-ink leading-[1.15] mt-4'
                             delay={0.1}
                         />
                         <Reveal delay={0.25}>
                             <p className='text-warm-slate mt-4 max-w-sm text-sm'>
                                 Our care starts from a simple idea: women are different, and they heal differently.
-                                So every treatment plan is personalised. From your first consultation to delivery day
+                                So every treatment plan is personalised. From your first fertility consultation to delivery day
                                 and beyond, our specialists cover every area of women&apos;s health under one roof,
                                 with modern facilities and equipment at both our centres.
                             </p>

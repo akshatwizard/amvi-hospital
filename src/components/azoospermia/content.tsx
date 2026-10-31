@@ -9,6 +9,7 @@ import Counter from '@/shared/counter'
 import ConditionSidebar from '@/shared/condition-sidebar'
 import IconItemGrid from '@/shared/icon-item-grid'
 import FaqAccordion from '@/shared/faq-accordion'
+import { extraFaqs } from '@/constants/extra-content'
 import { stats } from '@/constants/stats'
 import { infertilityConditionNav } from '@/constants/gynaecology-nav'
 import {
@@ -126,7 +127,7 @@ export default function AzoospermiaContent() {
 
                     <div>
                         <RevealText as="h2" text="FAQs related to azoospermia" className='font-serif text-2xl md:text-3xl text-plum-ink mb-4' />
-                        <FaqAccordion items={azooFaqs} />
+                        <FaqAccordion items={[...azooFaqs, ...extraFaqs("/infertility/male/azoospermia")]} />
                     </div>
                 </div>
             </Wrapper>

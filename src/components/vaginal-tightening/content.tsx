@@ -8,6 +8,7 @@ import RevealText from '@/shared/reveal_text'
 import Reveal from '@/shared/reveal'
 import Counter from '@/shared/counter'
 import FaqAccordion from '@/shared/faq-accordion'
+import { extraFaqs } from '@/constants/extra-content'
 import { stats } from '@/constants/stats'
 import { cosmeticGynecologyNav } from '@/constants/cosmetic-gynecology-nav'
 import {
@@ -95,7 +96,7 @@ export default function VaginalTighteningContent() {
 
                         <div>
                             <RevealText as="h2" text="Frequently asked questions" className='font-serif text-2xl md:text-3xl text-plum-ink mb-4' />
-                            <FaqAccordion items={vaginalTighteningFaqs} />
+                            <FaqAccordion items={[...vaginalTighteningFaqs, ...extraFaqs("/cosmetic-gynecology/vaginal-tightening")]} />
                         </div>
                     </div>
 

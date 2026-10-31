@@ -10,6 +10,9 @@ export default function TopBar() {
             <Wrapper className='md:py-2.5' bare>
                 <div className='w-full flex items-center justify-between gap-6'>
                     <div className='flex items-center gap-6 shrink-0'>
+                        <span className='text-[11px] font-medium uppercase tracking-wider text-petal-white bg-rose-800/60 rounded-full px-2.5 py-0.5'>
+                            Call us 24/7
+                        </span>
                         <Link
                             href="tel:+919100009669"
                             className='flex items-center gap-2 text-xs text-petal-white/90 hover:text-petal-white transition-colors'

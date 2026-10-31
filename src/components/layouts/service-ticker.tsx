@@ -8,9 +8,11 @@ const services = [
     "IVF & Fertility Treatment",
     "IUI",
     "ICSI",
+    "Egg Freezing",
+    "NICU & Newborn Care",
     "High-Risk Pregnancy Care",
     "PCOS / PCOD Treatment",
-    "Laparoscopic Surgery",
+    "Robotic & Laparoscopic Surgery",
     "Cosmetic Gynecology",
 ]
 

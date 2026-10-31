@@ -16,21 +16,21 @@ export default function HomeHero() {
                     <Reveal>
                         <span className='inline-flex items-center gap-2 text-xs text-rose-700 bg-rose-100 rounded-full px-3.5 py-1.5 w-fit'>
                             <span className='size-1.5 rounded-full bg-rose-500' />
-                            Hyderabad&apos;s trusted women&apos;s hospital
+                            Fertility, IVF &amp; maternity hospital in Hyderabad
                         </span>
                     </Reveal>
 
                     <RevealText
                         as="h1"
-                        text="Compassionate care, from first consult to delivery day"
+                        text="Your journey to parenthood starts here"
                         className='text-4xl md:text-5xl lg:text-6xl text-plum-ink leading-[1.1]'
                         delay={0.1}
                     />
 
                     <Reveal delay={0.3}>
                         <p className='text-warm-slate text-sm md:text-base max-w-lg'>
-                            Specialised gynaecology, fertility and maternity care built around you —
-                            led by doctors who&apos;ve guided over 30,000 families through every stage of the journey.
+                            Fertility assessment, IUI, IVF and ICSI, then pregnancy care and delivery with the same
+                            team — led by Dr. Shaivalini Kamarapu, with over 20 years in fertility and reproductive medicine.
                         </p>
                     </Reveal>
 
@@ -40,14 +40,14 @@ export default function HomeHero() {
                                 href="/contact"
                                 className='inline-flex items-center rounded-full bg-rose-700 hover:bg-rose-800 text-petal-white text-sm px-6 py-3.5 transition-colors'
                             >
-                                Book an appointment
+                                Book a fertility consultation
                             </Link>
 
                             <a href="tel:+919100009669"
                                 className='inline-flex items-center gap-2 text-sm text-plum-ink hover:text-rose-700 transition-colors'
                             >
                                 <Phone size={16} className='text-rose-500' />
-                                +91 91000 09669
+                                <span><span className='text-warm-slate'>Call 24/7</span> +91 91000 09669</span>
                             </a>
                         </div>
                     </Reveal>
@@ -63,7 +63,7 @@ export default function HomeHero() {
                     <Reveal delay={0.2} y={40} className='relative w-full'>
                         <Image
                             src="/images/hero/home-hero.png"
-                            alt="Doctor consulting a patient at AMVI Hospital"
+                            alt="Fertility consultation at AMVI Hospitals, Hyderabad"
                             width={1080}
                             height={1080}
                             priority

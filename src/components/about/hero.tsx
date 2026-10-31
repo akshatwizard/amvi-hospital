@@ -5,7 +5,7 @@ export default function AboutHero() {
         <PageHero
             eyebrow="About"
             title="About AMVI Hospital"
-            description="A daycare surgery centre in Hyderabad dedicated entirely to women's health — gynaecology, fertility, maternity and cosmetic gynaecology, all under one roof."
+            description="A fertility and maternity hospital in Hyderabad — IVF and fertility care, pregnancy and delivery, and women's health, all under one roof. Open 24/7."
             breadcrumbs={[{ label: "Home", href: "/" }, { label: "About AMVI Hospital" }]}
             image="/images/hero/about-hero.png"
             imageAlt="AMVI Hospital doctors and nursing staff"

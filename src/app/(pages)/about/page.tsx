@@ -8,14 +8,14 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "About AMVI Hospitals | Women's Hospital in Hyderabad",
     description:
-        "AMVI Hospital is a state-of-the-art daycare surgery centre in Hyderabad dedicated to women's health — offering gynaecology, fertility, maternity and cosmetic gynaecology care across two air-conditioned operation theatres, in-house pharmacy and on-site diagnostics.",
+        "AMVI Hospitals is a fertility and maternity hospital in Hyderabad — IVF, IUI and ICSI, pregnancy care and delivery, gynaecology and laparoscopic surgery, with two operation theatres, an in-house pharmacy and on-site diagnostics. Open 24/7.",
     alternates: {
         canonical: "/about",
     },
     openGraph: {
         title: "About AMVI Hospital",
         description:
-            "A daycare surgery centre in Hyderabad built for women's health — gynaecology, fertility, maternity and cosmetic gynaecology under one roof.",
+            "A fertility and maternity hospital in Hyderabad — IVF, pregnancy care and women's health under one roof. Open 24/7.",
         url: "/about",
         type: "website",
     },

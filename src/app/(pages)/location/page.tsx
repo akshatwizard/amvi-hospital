@@ -17,7 +17,7 @@ export default function LocationPage() {
             <PageHero
                 eyebrow="Locations"
                 title="Our hospital locations in Hyderabad"
-                description="Visit us at Puppalaguda or Attapur, Monday to Saturday, 10:00 AM to 6:00 PM."
+                description="Visit us at Puppalaguda or Attapur. Both branches are open 24/7 — call us any time."
                 breadcrumbs={[{ label: "Home", href: "/" }, { label: "Locations" }]}
                 cta={{ label: "Book a consultation", href: "/contact" }}
             />

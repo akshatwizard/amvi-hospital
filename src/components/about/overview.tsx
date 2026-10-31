@@ -42,7 +42,7 @@ export default function AboutOverview() {
                     <div>
                         <Reveal>
                             <p className='font-serif text-xl text-plum-ink mb-4'>
-                                A Daycare Surgery Centre, equipped for every step
+                                A fertility and maternity hospital, equipped for every step
                             </p>
                         </Reveal>
                         <StaggerContainer className='flex flex-col'>

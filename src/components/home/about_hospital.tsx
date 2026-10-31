@@ -22,17 +22,17 @@ export default function AboutHospital() {
 
                         <RevealText
                             as="h2"
-                            text="A daycare surgery centre built for women's health"
+                            text="A fertility and maternity hospital built around families"
                             className='font-serif text-3xl md:text-4xl text-plum-ink leading-[1.15] mt-4'
                             delay={0.1}
                         />
 
                         <Reveal delay={0.25}>
                             <p className='text-warm-slate mt-5 max-w-md text-sm md:text-base leading-relaxed'>
-                                AMVI Hospital is a super-specialty daycare surgery centre focused entirely on
-                                women&apos;s health, combining advanced medical and surgical care with both
-                                inpatient and outpatient services. Multiple specialties sit under one roof,
-                                backed by doctors of national and international standing.
+                                AMVI Hospitals is a fertility and maternity hospital in Hyderabad. From the first
+                                fertility assessment, IUI and IVF to pregnancy care, delivery and newborn care, one
+                                team looks after you, with gynaecology and laparoscopic surgery under the same roof.
+                                Both branches are open 24/7.
                             </p>
                         </Reveal>
 

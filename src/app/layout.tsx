@@ -31,8 +31,8 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   // Makes every relative canonical/OG URL absolute on the www domain.
   metadataBase: new URL(SITE_URL),
-  title: "AMVI Hospitals Hyderabad | IVF, Maternity & Women's Care",
-  description: "AMVI Hospitals, Hyderabad — IVF, IUI, maternity, normal & painless delivery, laparoscopy and PCOS care. Expert women's healthcare at Puppalaguda & Attapur.",
+  title: "AMVI Hospitals Hyderabad | IVF & Fertility Centre, Maternity Care",
+  description: "AMVI Hospitals, Hyderabad — IVF and fertility centre: IVF, ICSI, IUI, egg freezing and PCOS care, with maternity, normal and painless delivery. Puppalaguda & Attapur, open 24/7.",
   openGraph: {
     siteName: SITE_NAME,
     locale: "en_IN",

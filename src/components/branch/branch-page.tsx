@@ -51,7 +51,7 @@ export default function BranchPage({ branch }: { branch: Branch }) {
                         <aside className='flex flex-col gap-4 rounded-card border border-rose-100 bg-white p-6'>
                             <p className='font-serif text-xl text-plum-ink'>AMVI Hospitals, {branch.name}</p>
                             <p className='flex items-start gap-2.5 text-sm text-warm-slate'><MapPin size={16} className='mt-0.5 shrink-0 text-rose-700' aria-hidden="true" />{loc.address}</p>
-                            <p className='flex items-center gap-2.5 text-sm text-warm-slate'><Clock size={16} className='shrink-0 text-rose-700' aria-hidden="true" />Monday to Saturday, 10:00 AM – 6:00 PM</p>
+                            <p className='flex items-center gap-2.5 text-sm text-warm-slate'><Clock size={16} className='shrink-0 text-rose-700' aria-hidden="true" />Open 24/7 · Call us any time</p>
                             <a href={`tel:${loc.phoneHref}`} className='flex items-center gap-2.5 text-sm text-rose-700 hover:underline'><Phone size={16} className='shrink-0' aria-hidden="true" />{loc.phoneDisplay}</a>
                             <div className='flex flex-wrap gap-3 pt-2'>
                                 <a href={loc.mapsUrl} target="_blank" rel="noopener noreferrer" className='inline-flex items-center gap-2 rounded-full bg-rose-700 hover:bg-rose-800 text-petal-white text-sm px-5 py-2.5 transition-colors'>
