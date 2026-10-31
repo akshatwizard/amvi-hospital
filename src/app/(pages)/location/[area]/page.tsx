@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import PageHero from "@/shared/page-hero";
 import LocationAreaContent from "@/components/location-area/content";
 import { locationAreas } from "@/constants/location-areas";
-const DEFAULT_HERO_IMAGE = "/images/hero/laparoscopic-hysterectomy-hero.png"
+// Area pages share the hospital team photo (no area-specific photos exist).
+const DEFAULT_HERO_IMAGE = "/images/hero/contact-hero.png"
 type Props = {
     params: Promise<{ area: string }>;
 };
